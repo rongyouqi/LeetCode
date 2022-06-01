@@ -42,7 +42,7 @@ Time Complexity: O(n)
 
 Space Complexity: O(n)
 
-### Solution: space optimized
+### Solution 1: space optimized dynamic programming
 
 ```java
 public int climbStairs(int n) {
@@ -66,6 +66,57 @@ Time Complexity: O(n)
 
 Space Complexity: O(1)
 
+### Solution 2: matrix multiplication
+
+```java
+public int climbStairs(int n) {
+  int[][] q = {{1, 1}, {1, 0}};
+  int[][] result = power(q, n);
+  return result[0][0];
+}
+
+private int[][] power(int[][] a, int n) {
+  int[][] result = {{1, 0}, {0, 1}};
+  while (n > 0) {
+    if ((n & 1) == 1) {
+      result = multiply(result, a);
+    }
+    n >>= 1;
+    a = multiply(a, a);
+  }
+  return result;
+}
+
+private int[][] multiply(int[][] a, int[][] b) {
+  int[][] result = new int[2][2];
+  for (int i = 0; i < 2; i++) {
+    for (int j = 0; j < 2; j++) {
+      result[i][j] = a[i][0] * b[0][j] + a[i][1] * b[1][j];
+    }
+  }
+  return result;
+}
+```
+
+Time Complexity: O(logn)
+
+Space Complexity: O(1)
+
+### Solution 3: Fibonacci formula
+
+```java
+public int climbStairs(int n) {
+  double sqrt5 = Math.sqrt(5);
+  double phi = (1 + sqrt5) / 2;
+  double psi = (1 - sqrt5) / 2;
+  return (int) ((Math.pow(phi, n + 1) - Math.pow(psi, n + 1)) / sqrt5);
+}
+```
+
+Time Complexity: O(logn) // pow method
+
+Space Complexity: O(1)
+
 ## 2. Coin Change (medium)
 
 [LeetCode 322](https://leetcode.com/problems/coin-change/)
@@ -82,7 +133,7 @@ public int coinChange(int[] coins, int amount) {
     return -1;
   }
   int[] M = new int[amount + 1];
-  Arrays.fill(M, amount + 1); // Integer.MAX_VALUE ??? why wrong
+  Arrays.fill(M, amount + 1); // Integer.MAX_VALUE ??? why wrong ? overflow ?
   M[0] = 0;
   for (int i = 1; i <= amount; i++) {
     for (int j = 0; j < coins.length; j++) {
