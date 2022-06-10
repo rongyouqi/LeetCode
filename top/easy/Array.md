@@ -1,4 +1,4 @@
-# LeetCode Top Interview Questions Easy Day 1 (Array)
+# Easy Collection Day 1 (Array)
 
 ## 1. Remove Duplicates from Sorted Array (easy)
 
