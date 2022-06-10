@@ -6,6 +6,14 @@ https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questio
 
 ## Top Interview Questions
 
-### Easy
+### Easy Collection
 
-https://leetcode.com/explore/interview/card/top-interview-questions-easy
+https://leetcode.com/explore/interview/card/top-interview-questions-easy/
+
+### Medium Collection
+
+https://leetcode.com/explore/interview/card/top-interview-questions-medium/
+
+### Hard Collection
+
+https://leetcode.com/explore/interview/card/top-interview-questions-hard/
