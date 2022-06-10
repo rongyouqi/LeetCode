@@ -1,5 +1,7 @@
 # Easy Collection Day 1 (Array)
 
+https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/
+
 ## 1. Remove Duplicates from Sorted Array (easy)
 
 [LeetCode 26](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
