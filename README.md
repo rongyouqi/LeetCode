@@ -48,9 +48,29 @@ https://leetcode.com/explore/interview/card/top-interview-questions-easy/
 
 https://leetcode.com/explore/interview/card/top-interview-questions-medium/
 
+1. Array and Strings
+2. Linked List
+3. Trees and Graphs
+4. Backtracking
+5. Sorting and Searching
+6. Dynamic Programming
+7. Design
+8. Math
+9. Others
+
 ### Hard Collection
 
 https://leetcode.com/explore/interview/card/top-interview-questions-hard/
+
+1. Array and Strings
+2. Linked List
+3. Trees and Graphs
+4. Backtracking
+5. Sorting and Searching
+6. Dynamic Programming
+7. Design
+8. Math
+9. Others
 
 ## 花花酱
 
