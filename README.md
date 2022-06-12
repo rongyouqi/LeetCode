@@ -17,16 +17,16 @@
 
 https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions
 
-1. Array
-2. Binary
-3. Dynamic Programming
+1. [Array](https://github.com/rongyouqi/LeetCode/blob/main/blind75/Array.md)
+2. [Binary](https://github.com/rongyouqi/LeetCode/blob/main/blind75/Binary.md)
+3. [Dynamic Programming](https://github.com/rongyouqi/LeetCode/blob/main/blind75/Dynamic%20Programming.md)
 4. Graph
-5. Heap
-6. Interval
-7. Linked List
-8. Matrix
-9. String
-10. Tree
+5. [Heap](https://github.com/rongyouqi/LeetCode/blob/main/blind75/Heap.md)
+6. [Interval](https://github.com/rongyouqi/LeetCode/blob/main/blind75/Interval.md)
+7. [Linked List](https://github.com/rongyouqi/LeetCode/blob/main/blind75/Linked%20List.md)
+8. [Matrix](https://github.com/rongyouqi/LeetCode/blob/main/blind75/Matrix.md)
+9. [String](https://github.com/rongyouqi/LeetCode/blob/main/blind75/String.md)
+10. [Tree](https://github.com/rongyouqi/LeetCode/blob/main/blind75/Tree.md)
 
 ## LeetCode Top Interview Questions
 
