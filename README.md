@@ -1,4 +1,4 @@
-# LeetCode
+# LeetCode Collections
 
 ## 肌肉记忆
 
