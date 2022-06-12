@@ -368,7 +368,9 @@ public boolean isValidBST(TreeNode root) {
 }
 ```
 
+Time Complexity: O(n)
 
+Space Complexity: O(n)
 
 ## 10. Kth Smallest Element in a BST (medium)
 
