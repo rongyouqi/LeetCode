@@ -34,7 +34,7 @@ https://www.youtube.com/channel/UC5xDNEcvb1vgw3lE21Ack2Q
 
 [LeetCode 206](https://leetcode.com/problems/reverse-linked-list/)
 
-### Solution 1: iterative
+#### Solution 1: iterative
 
 ```java
 public ListNode reverseList(ListNode head) {
@@ -56,10 +56,9 @@ public ListNode reverseList(ListNode head) {
 ```
 
 Time Complexity: O(n)
-
 Space Complexity: O(1)
 
-### Solution 2: recursive
+#### Solution 2: recursive
 
 ```java
 public ListNode reverseList(ListNode head) {
@@ -76,7 +75,6 @@ public ListNode reverseList(ListNode head) {
 ```
 
 Time Complexity: O(n)
-
 Space Complexity: O(n)
 
 ### 3. Tree Traversal
