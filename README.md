@@ -34,9 +34,9 @@ https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questio
 
 https://leetcode.com/explore/interview/card/top-interview-questions-easy/
 
-1. Array
-2. Strings
-3. Linked List
+1. [Array](https://github.com/rongyouqi/LeetCode/blob/main/top/easy/Array.md)
+2. [Strings](https://github.com/rongyouqi/LeetCode/blob/main/top/easy/Strings.md)
+3. [Linked List](https://github.com/rongyouqi/LeetCode/blob/main/top/easy/Linked%20List.md)
 4. Trees
 5. Sorting and Searching
 6. Dynamic Programming
