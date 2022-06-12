@@ -56,6 +56,7 @@ public ListNode reverseList(ListNode head) {
 ```
 
 Time Complexity: O(n)
+
 Space Complexity: O(1)
 
 #### Solution 2: recursive
@@ -75,6 +76,7 @@ public ListNode reverseList(ListNode head) {
 ```
 
 Time Complexity: O(n)
+
 Space Complexity: O(n)
 
 ### 3. Tree Traversal
