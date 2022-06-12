@@ -37,10 +37,10 @@ https://leetcode.com/explore/interview/card/top-interview-questions-easy/
 1. [Array](https://github.com/rongyouqi/LeetCode/blob/main/top/easy/Array.md)
 2. [Strings](https://github.com/rongyouqi/LeetCode/blob/main/top/easy/Strings.md)
 3. [Linked List](https://github.com/rongyouqi/LeetCode/blob/main/top/easy/Linked%20List.md)
-4. Trees
-5. Sorting and Searching
-6. Dynamic Programming
-7. Design
+4. [Trees](https://github.com/rongyouqi/LeetCode/blob/main/top/easy/Trees.md)
+5. [Sorting and Searching](https://github.com/rongyouqi/LeetCode/blob/main/top/easy/Sorting%20and%20Searching.md)
+6. [Dynamic Programming](https://github.com/rongyouqi/LeetCode/blob/main/top/easy/Dynamic%20Programming.md)
+7. [Design](https://github.com/rongyouqi/LeetCode/blob/main/top/easy/Design.md)
 8. Math
 9. Others
 
