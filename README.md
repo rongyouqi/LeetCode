@@ -17,11 +17,32 @@
 
 https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions
 
+1. Array
+2. Binary
+3. Dynamic Programming
+4. Graph
+5. Heap
+6. Interval
+7. Linked List
+8. Matrix
+9. String
+10. Tree
+
 ## LeetCode Top Interview Questions
 
 ### Easy Collection
 
 https://leetcode.com/explore/interview/card/top-interview-questions-easy/
+
+1. Array
+2. Strings
+3. Linked List
+4. Trees
+5. Sorting and Searching
+6. Dynamic Programming
+7. Design
+8. Math
+9. Others
 
 ### Medium Collection
 
