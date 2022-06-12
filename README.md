@@ -50,7 +50,7 @@ Space Complexity: O(1)
 
 ```java
 public int findMinDifference(List<String> timePoints) {
-
+    // todo
 }
 ```
 
@@ -107,9 +107,113 @@ Time Complexity: O(n)
 
 Space Complexity: O(n)
 
-### 3. Tree Traversal
+### 3. Binary Tree Traversal
 
-todo
+#### Preorder 根左右
+
+[LeetCode 144](https://leetcode.com/problems/binary-tree-preorder-traversal/)
+
+##### Solution 1: recursive
+
+```java
+public List<Integer> preorderTraversal(TreeNode root) {
+    // todo
+}
+```
+
+##### Solution 2: iterative
+
+```java
+public List<Integer> preorderTraversal(TreeNode root) {
+    // todo
+}
+```
+
+#### Inorder 左根右
+
+[LeetCode 94](https://leetcode.com/problems/binary-tree-inorder-traversal/)
+
+##### Solution 1: recursive
+
+```java
+public List<Integer> inorderTraversal(TreeNode root) {
+    // todo
+}
+```
+
+##### Solution 2: iterative
+
+```java
+public List<Integer> inorderTraversal(TreeNode root) {
+    // todo
+}
+```
+
+#### Postorder 左右根
+
+[LeetCode 145](https://leetcode.com/problems/binary-tree-postorder-traversal/)
+
+##### Solution 1: recursive
+
+```java
+public List<Integer> postorderTraversal(TreeNode root) {
+    // todo
+}
+```
+
+##### Solution 2: iterative
+
+```java
+public List<Integer> postorderTraversal(TreeNode root) {
+    // todo
+}
+```
+
+#### Level Order
+
+[LeetCode 297: Serialize and Deserialize Binary Tree (hard)](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)
+
+```java
+public String serialize(TreeNode root) {
+    // todo
+}
+
+public TreeNode deserialize(String data) {
+    // todo
+}
+```
+
+[LeetCode 102: Binary Tree Level Order Traversal (medium)](https://leetcode.com/problems/binary-tree-level-order-traversal/)
+
+```java
+public List<List<Integer>> levelOrder(TreeNode root) {
+    // todo
+}
+```
+
+[LeetCode 103: Binary Tree Zigzag Level Order Traversal (medium)](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)
+
+```java
+public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
+    // todo
+}
+```
+
+[LeetCode 107: Binary Tree Level Order Traversal II (medium)](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/)
+
+```java
+public List<List<Integer>> levelOrderBottom(TreeNode root) {
+    // todo
+}
+```
+
+[LeetCode 314: Binary Tree Vertical Order Traversal (medium)](https://leetcode.com/problems/binary-tree-vertical-order-traversal/)
+
+```java
+public List<List<Integer>> verticalOrder(TreeNode root) {
+    // todo
+}
+```
 
 ### 4. Priority Queue
 
