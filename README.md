@@ -81,10 +81,19 @@ Space Complexity: O(n)
 
 ### 3. Tree Traversal
 
+todo
 
+### 4. Priority Queue
 
-### 4. Hashmap
+```java
+PriorityQueue<Integer> minHeap = new PriorityQueue<>();
+PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder());
+```
 
+### 5. Implement Hashmap
 
+todo
 
-### 5. LRU Cache
+### 6. Implement LRU Cache
+
+todo
