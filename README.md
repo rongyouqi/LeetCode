@@ -28,7 +28,35 @@ https://www.youtube.com/channel/UC5xDNEcvb1vgw3lE21Ack2Q
 
 ### 1. Sorting Algorithms
 
+[LeetCode 912](https://leetcode.com/problems/sort-an-array/)
 
+#### Solution 1: bubble sort
+
+todo
+
+[LeetCode 75: Sort Colors (medium)](https://leetcode.com/problems/sort-colors/)
+
+```java
+public void sortColors(int[] nums) {
+    // todo
+}
+```
+
+Time Complexity: O(n)
+
+Space Complexity: O(1)
+
+[LeetCode 539: Minimum Time Difference (medium)](https://leetcode.com/problems/minimum-time-difference/)
+
+```java
+public int findMinDifference(List<String> timePoints) {
+
+}
+```
+
+Time Complexity: O(n)
+
+Space Complexity: O(24 * 60) = O(1)
 
 ### 2. Reverse Linked List (easy)
 
