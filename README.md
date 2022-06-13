@@ -41,8 +41,8 @@ https://leetcode.com/explore/interview/card/top-interview-questions-easy/
 5. [Sorting and Searching](https://github.com/rongyouqi/LeetCode/blob/main/top/easy/Sorting%20and%20Searching.md)
 6. [Dynamic Programming](https://github.com/rongyouqi/LeetCode/blob/main/top/easy/Dynamic%20Programming.md)
 7. [Design](https://github.com/rongyouqi/LeetCode/blob/main/top/easy/Design.md)
-8. Math
-9. Others
+8. [Math](https://github.com/rongyouqi/LeetCode/blob/main/top/easy/Math.md)
+9. [Others](https://github.com/rongyouqi/LeetCode/blob/main/top/easy/Others.md)
 
 ### Medium Collection
 
