@@ -48,8 +48,8 @@ https://leetcode.com/explore/interview/card/top-interview-questions-easy/
 
 https://leetcode.com/explore/interview/card/top-interview-questions-medium/
 
-1. Array and Strings
-2. Linked List
+1. [Array and Strings](https://github.com/rongyouqi/LeetCode/blob/main/top/medium/Array%20and%20Strings.md)
+2. [Linked List](https://github.com/rongyouqi/LeetCode/blob/main/top/medium/Linked%20List.md)
 3. Trees and Graphs
 4. Backtracking
 5. Sorting and Searching
