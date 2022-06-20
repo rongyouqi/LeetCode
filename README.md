@@ -52,8 +52,8 @@ https://leetcode.com/explore/interview/card/top-interview-questions-medium/
 2. [Linked List](https://github.com/rongyouqi/LeetCode/blob/main/top/medium/Linked%20List.md)
 3. [Trees and Graphs](https://github.com/rongyouqi/LeetCode/blob/main/top/medium/Trees%20and%20Graphs.md)
 4. [Backtracking](https://github.com/rongyouqi/LeetCode/blob/main/top/medium/Backtracking.md)
-5. Sorting and Searching
-6. Dynamic Programming
+5. [Sorting and Searching](https://github.com/rongyouqi/LeetCode/blob/main/top/medium/Sorting%20and%20Searching.md)
+6. [Dynamic Programming](https://github.com/rongyouqi/LeetCode/blob/main/top/medium/Dynamic%20Programming.md)
 7. Design
 8. Math
 9. Others
