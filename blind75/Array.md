@@ -8,14 +8,14 @@
 
 ```java
 public int[] twoSum(int[] nums, int target) {
-  for (int i = 0; i < nums.length; i++) {
-    for (int j = i + 1; j < nums.length; j++) {
-      if (nums[i] + nums[j] == target) {
-        return new int[]{i, j};
-      }
+    for (int i = 0; i < nums.length; i++) {
+        for (int j = i + 1; j < nums.length; j++) {
+            if (nums[i] + nums[j] == target) {
+                return new int[]{i, j};
+            }
+        }
     }
-  }
-  return null; // throw new IllegalArgumentException("No two sum solution");
+    return null; // throw new IllegalArgumentException("No two sum solution");
 }
 ```
 
@@ -27,15 +27,15 @@ Space Complexity: O(1)
 
 ```java
 public int[] twoSum(int[] nums, int target) {
-  Map<Integer, Integer> map = new HashMap<>();
-  for (int i = 0; i < nums.length; i++) {
-    int complement = target - nums[i];
-    if (map.containsKey(complement)) {
-      return new int[]{map.get(complement), i};
+    Map<Integer, Integer> map = new HashMap<>();
+    for (int i = 0; i < nums.length; i++) {
+        int complement = target - nums[i];
+        if (map.containsKey(complement)) {
+            return new int[]{map.get(complement), i};
+        }
+        map.put(nums[i], i);
     }
-    map.put(nums[i], i);
-  }
-  return null;
+    return null;
 }
 ```
 
@@ -49,16 +49,16 @@ Space Complexity: O(n)
 
 ```java
 public int maxProfit(int[] prices) {
-  if (prices == null || prices.length == 0) {
-    return 0;
-  }
-  int minPriceSoFar = Integer.MAX_VALUE;
-  int maxProfit = 0;
-  for (int price : prices) {
-    minPriceSoFar = Math.min(minPriceSoFar, price);
-    maxProfit = Math.max(maxProfit, price - minPriceSoFar);
-  }
-  return maxProfit;
+    if (prices == null || prices.length == 0) {
+        return 0;
+    }
+    int minPriceSoFar = Integer.MAX_VALUE;
+    int maxProfit = 0;
+    for (int price : prices) {
+        minPriceSoFar = Math.min(minPriceSoFar, price);
+        maxProfit = Math.max(maxProfit, price - minPriceSoFar);
+    }
+    return maxProfit;
 }
 ```
 
@@ -74,16 +74,16 @@ Space Complexity: O(1)
 
 ```java
 public boolean containsDuplicate(int[] nums) {
-  if (nums == null || nums.length == 0) {
-    return false;
-  }
-  Arrays.sort(nums);
-  for (int i = 0; i < nums.length - 1; i++) {
-    if (nums[i] == nums[i + 1]) {
-      return true;
+    if (nums == null || nums.length == 0) {
+        return false;
     }
-  }
-  return false;
+    Arrays.sort(nums);
+    for (int i = 0; i < nums.length - 1; i++) {
+        if (nums[i] == nums[i + 1]) {
+            return true;
+        }
+    }
+    return false;
 }
 ```
 
@@ -95,17 +95,17 @@ Space Complexity: O(1)
 
 ```java
 public boolean containsDuplicate(int[] nums) {
-  if (nums == null || nums.length == 0) {
-    return false;
-  }
-  Set<Integer> set = new HashSet<>();
-  for (int num : nums) {
-    if (set.contains(num)) {
-      return true;
+    if (nums == null || nums.length == 0) {
+        return false;
     }
-    set.add(num);
-  }
-  return false;
+    Set<Integer> set = new HashSet<>();
+    for (int num : nums) {
+        if (set.contains(num)) {
+            return true;
+        }
+        set.add(num);
+    }
+    return false;
 }
 ```
 
@@ -119,20 +119,20 @@ Space Complexity: O(n)
 
 ```java
 public int[] productExceptSelf(int[] nums) {
-  if (nums == null || nums.length == 0) {
-    throw new IllegalArgumentException("illegal input array");
-  }
-  int[] result = new int[nums.length];
-  result[0] = 1;
-  for (int i = 1; i < nums.length; i++) {
-    result[i] = result[i - 1] * nums[i - 1];
-  }
-  int right = 1;
-  for (int i = nums.length - 1; i >= 0; i--) {
-    result[i] = result[i] * right;
-    right *= nums[i];
-  }
-  return result;
+    if (nums == null || nums.length == 0) {
+        throw new IllegalArgumentException("illegal input array");
+    }
+    int[] result = new int[nums.length];
+    result[0] = 1;
+    for (int i = 1; i < nums.length; i++) {
+        result[i] = result[i - 1] * nums[i - 1];
+    }
+    int right = 1;
+    for (int i = nums.length - 1; i >= 0; i--) {
+        result[i] = result[i] * right;
+        right *= nums[i];
+    }
+    return result;
 }
 ```
 
@@ -148,17 +148,17 @@ Space Complexity: O(1)
 
 ```java
 public int maxSubArray(int[] nums) {
-  if (nums == null || nums.length == 0) {
-    return 0;
-  }
-  int lastMax = nums[0];
-  int globalMax = nums[0];
-  for (int i = 1; i < nums.length; i++) {
-    lastMax = Math.max(lastMax + nums[i], nums[i]);
-    // 继承遗产 or 另起炉灶
-    globalMax = Math.max(globalMax, lastMax);
-  }
-  return globalMax;
+    if (nums == null || nums.length == 0) {
+        return 0;
+    }
+    int lastMax = nums[0];
+    int globalMax = nums[0];
+    for (int i = 1; i < nums.length; i++) {
+        lastMax = Math.max(lastMax + nums[i], nums[i]);
+        // 继承遗产 or 另起炉灶
+        globalMax = Math.max(globalMax, lastMax);
+    }
+    return globalMax;
 }
 ```
 
@@ -172,19 +172,19 @@ Space Complexity: O(1)
 
 ```java
 public int maxProduct(int[] nums) {
-  if (nums == null || nums.length == 0) {
-    return 0;
-  }
-  int lastMin = nums[0];
-  int lastMax = nums[0];
-  int globalMax = nums[0];
-  for (int i = 1; i < nums.length; i++) {
-    int temp = lastMin;
-    lastMin = Math.min(Math.min(lastMin * nums[i], lastMax * nums[i]), nums[i]);
-    lastMax = Math.max(Math.max(temp * nums[i], lastMax * nums[i]), nums[i]);
-    globalMax = Math.max(globalMax, lastMax);
-  }
-  return globalMax;
+    if (nums == null || nums.length == 0) {
+        return 0;
+    }
+    int lastMin = nums[0];
+    int lastMax = nums[0];
+    int globalMax = nums[0];
+    for (int i = 1; i < nums.length; i++) {
+        int temp = lastMin;
+        lastMin = Math.min(Math.min(lastMin * nums[i], lastMax * nums[i]), nums[i]);
+        lastMax = Math.max(Math.max(temp * nums[i], lastMax * nums[i]), nums[i]);
+        globalMax = Math.max(globalMax, lastMax);
+    }
+    return globalMax;
 }
 ```
 
@@ -199,30 +199,30 @@ Space Complexity: O(1)
 ### Solution: binary search
 
 1. while condition
-   * right > left + 1
+     * right > left + 1
 2. update left
-   * left = mid
+     * left = mid
 3. update right
-   * right = mid
+     * right = mid
 
 ```java
 public int findMin(int[] nums) {
-  if (nums == null || nums.length == 0) {
-    throw new IllegalArgumentException("illegal input array");
-  }
-  if (nums.length == 1 || nums[0] < nums[nums.length - 1]) {
-    return nums[0];
-  }
-  int left = 0, right = nums.length - 1;
-  while (right > left + 1) {
-    int mid = left + (right - left) / 2;
-    if (nums[mid] < nums[right]) {
-      right = mid;
-    } else {
-      left = mid;
+    if (nums == null || nums.length == 0) {
+        throw new IllegalArgumentException("illegal input array");
     }
-  }
-  return Math.min(nums[left], nums[right]);
+    if (nums.length == 1 || nums[0] < nums[nums.length - 1]) {
+        return nums[0];
+    }
+    int left = 0, right = nums.length - 1;
+    while (right > left + 1) {
+        int mid = left + (right - left) / 2;
+        if (nums[mid] < nums[right]) {
+            right = mid;
+        } else {
+            left = mid;
+        }
+    }
+    return Math.min(nums[left], nums[right]);
 }
 ```
 
@@ -238,35 +238,35 @@ Space Complexity: O(1)
 
 ```java
 public int search(int[] nums, int target) {
-  if (nums == null || nums.length == 0) {
+    if (nums == null || nums.length == 0) {
+        return -1;
+    }
+    int left = 0, right = nums.length - 1;
+    while (left <= right) {
+        if (nums[left] == target) {
+            return left;
+        }
+        if (nums[right] == target) {
+            return right;
+        }
+        int mid = left + (right - left) / 2;
+        if (nums[mid] == target) {
+            return mid;
+        } else if (nums[mid] > nums[left]) {
+            if (target < nums[mid] && target > nums[left]) {
+                right = mid - 1;
+            } else {
+                left = mid + 1;
+            }
+        } else {
+            if (target > nums[mid] && target < nums[right]) {
+                left = mid + 1;
+            } else {
+                right = mid - 1;
+            }
+        }
+    }
     return -1;
-  }
-  int left = 0, right = nums.length - 1;
-  while (left <= right) {
-    if (nums[left] == target) {
-      return left;
-    }
-    if (nums[right] == target) {
-      return right;
-    }
-    int mid = left + (right - left) / 2;
-    if (nums[mid] == target) {
-      return mid;
-    } else if (nums[mid] > nums[left]) {
-      if (target < nums[mid] && target > nums[left]) {
-        right = mid - 1;
-      } else {
-        left = mid + 1;
-      }
-    } else {
-      if (target > nums[mid] && target < nums[right]) {
-        left = mid + 1;
-      } else {
-        right = mid - 1;
-      }
-    }
-  }
-  return -1;
 }
 ```
 
@@ -282,38 +282,38 @@ Space Complexity: O(1)
 
 ```java
 public List<List<Integer>> threeSum(int[] nums) {
-  List<List<Integer>> result = new ArrayList<>();
-  if (nums == null || nums.length < 3) {
-    return result;
-  }
-  return allTriples(nums, 0);
+    List<List<Integer>> result = new ArrayList<>();
+    if (nums == null || nums.length < 3) {
+        return result;
+    }
+    return allTriples(nums, 0);
 }
 
 private List<List<Integer>> allTriples(int[] array, int target) {
-  List<List<Integer>> result = new ArrayList<>();
-  Arrays.sort(array);
-  for (int i = 0; i < array.length - 2; i++) {
-    if (i > 0 && array[i] == array[i - 1]) {
-      continue;
-    }
-    int left = i + 1;
-    int right = array.length - 1;
-    while (left < right) {
-      int temp = array[left] + array[right];
-      if (temp + array[i] == target) {
-        result.add(Arrays.asList(array[i], array[left], array[right]));
-        left++;
-        while (left < right && array[left] == array[left - 1]) {
-          left++;
+    List<List<Integer>> result = new ArrayList<>();
+    Arrays.sort(array);
+    for (int i = 0; i < array.length - 2; i++) {
+        if (i > 0 && array[i] == array[i - 1]) {
+            continue;
         }
-      } else if (temp + array[i] < target) {
-        left++;
-      } else {
-        right--;
-      }
+        int left = i + 1;
+        int right = array.length - 1;
+        while (left < right) {
+            int temp = array[left] + array[right];
+            if (temp + array[i] == target) {
+                result.add(Arrays.asList(array[i], array[left], array[right]));
+                left++;
+                while (left < right && array[left] == array[left - 1]) {
+                    left++;
+                }
+            } else if (temp + array[i] < target) {
+                left++;
+            } else {
+                right--;
+            }
+        }
     }
-  }
-  return result;
+    return result;
 }
 ```
 
@@ -327,20 +327,20 @@ Space Complexity: O(1)
 
 ```java
 public int maxArea(int[] height) {
-  if (height == null || height.length == 0) {
-    return 0;
-  }
-  int result = 0;
-  int left = 0, right = height.length - 1;
-  while (left < right) {
-    result = Math.max(result, (right - left) * Math.min(height[left], height[right]));
-    if (height[left] > height[right]) {
-      right--;
-    } else {
-      left++;
+    if (height == null || height.length == 0) {
+        return 0;
     }
-  }
-  return result;
+    int result = 0;
+    int left = 0, right = height.length - 1;
+    while (left < right) {
+        result = Math.max(result, (right - left) * Math.min(height[left], height[right]));
+        if (height[left] > height[right]) {
+            right--;
+        } else {
+            left++;
+        }
+    }
+    return result;
 }
 ```
 
