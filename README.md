@@ -20,7 +20,7 @@ https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questio
 1. [Array](https://github.com/rongyouqi/LeetCode/blob/main/blind75/Array.md)
 2. [Binary](https://github.com/rongyouqi/LeetCode/blob/main/blind75/Binary.md)
 3. [Dynamic Programming](https://github.com/rongyouqi/LeetCode/blob/main/blind75/Dynamic%20Programming.md)
-4. Graph
+4. [Graph](https://github.com/rongyouqi/LeetCode/blob/main/blind75/Graph.md)
 5. [Heap](https://github.com/rongyouqi/LeetCode/blob/main/blind75/Heap.md)
 6. [Interval](https://github.com/rongyouqi/LeetCode/blob/main/blind75/Interval.md)
 7. [Linked List](https://github.com/rongyouqi/LeetCode/blob/main/blind75/Linked%20List.md)
@@ -66,7 +66,7 @@ https://leetcode.com/explore/interview/card/top-interview-questions-hard/
 2. [Linked List](https://github.com/rongyouqi/LeetCode/blob/main/top/hard/Linked%20List.md)
 3. [Trees and Graphs](https://github.com/rongyouqi/LeetCode/blob/main/top/hard/Trees%20and%20Graphs.md)
 4. [Backtracking](https://github.com/rongyouqi/LeetCode/blob/main/top/hard/Backtracking.md)
-5. Sorting and Searching
+5. [Sorting and Searching](https://github.com/rongyouqi/LeetCode/blob/main/top/hard/Sorting%20and%20Searching.md)
 6. Dynamic Programming
 7. Design
 8. Math
