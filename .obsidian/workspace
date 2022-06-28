@@ -1,0 +1,103 @@
+{
+  "main": {
+    "id": "a596d59c946e0f26",
+    "type": "split",
+    "children": [
+      {
+        "id": "7c4c03109983e085",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "weekly contest/20220625 Contest 299.md",
+            "mode": "source",
+            "source": true
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "bd88c9f12f49913c",
+    "type": "split",
+    "children": [
+      {
+        "id": "e6664c7d9a006c13",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "054f72c98d6c46fa",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "c2fab7186aa61130",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "3832b47e2c5291c9",
+    "type": "split",
+    "children": [
+      {
+        "id": "8fa8a68aeed51f15",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "872cb934ba3de99f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "weekly contest/20220625 Contest 299.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "7c4c03109983e085",
+  "lastOpenFiles": [
+    "weekly contest/20220625 Contest 299.md",
+    "blind75/Tree.md",
+    "blind75/String.md",
+    "blind75/Matrix.md",
+    "blind75/Linked List.md",
+    "blind75/Interval.md",
+    "blind75/Heap.md",
+    "blind75/Graph.md",
+    "blind75/Dynamic Programming.md",
+    "blind75/Binary.md"
+  ]
+}
