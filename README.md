@@ -68,7 +68,7 @@ https://leetcode.com/explore/interview/card/top-interview-questions-hard/
 4. [Backtracking](https://github.com/rongyouqi/LeetCode/blob/main/top/hard/Backtracking.md)
 5. [Sorting and Searching](https://github.com/rongyouqi/LeetCode/blob/main/top/hard/Sorting%20and%20Searching.md)
 6. [Dynamic Programming](https://github.com/rongyouqi/LeetCode/blob/main/top/hard/Dynamic%20Programming.md)
-7. Design
+7. [Design](https://github.com/rongyouqi/LeetCode/blob/main/top/hard/Design.md)
 8. Math
 9. Others
 
