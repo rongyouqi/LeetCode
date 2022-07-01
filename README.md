@@ -69,8 +69,8 @@ https://leetcode.com/explore/interview/card/top-interview-questions-hard/
 5. [Sorting and Searching](https://github.com/rongyouqi/LeetCode/blob/main/top/hard/Sorting%20and%20Searching.md)
 6. [Dynamic Programming](https://github.com/rongyouqi/LeetCode/blob/main/top/hard/Dynamic%20Programming.md)
 7. [Design](https://github.com/rongyouqi/LeetCode/blob/main/top/hard/Design.md)
-8. Math
-9. Others
+8. [Math](https://github.com/rongyouqi/LeetCode/blob/main/top/hard/Math.md)
+9. [Others](https://github.com/rongyouqi/LeetCode/blob/main/top/hard/Others.md)
 
 ## 花花酱
 
