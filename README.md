@@ -1,5 +1,17 @@
 # LeetCode Collections
 
+## Graph
+
+https://leetcode.com/explore/featured/card/graph/
+
+0. [Graph Overview](https://github.com/rongyouqi/LeetCode/blob/main/graph/Graph%20Overview.md)
+1. Disjoint Set
+2. DFS
+3. BFS
+4. Minimum spanning Tree
+5. Single Source Shortest Path Algorithm
+6. Kahn's Algorithm for Topological Sorting
+
 ## 肌肉记忆
 
 1. [Sorting Algorithms](https://github.com/rongyouqi/LeetCode/blob/main/%E8%82%8C%E8%82%89%E8%AE%B0%E5%BF%86.md#1-sorting-algorithms)
@@ -71,18 +83,6 @@ https://leetcode.com/explore/interview/card/top-interview-questions-hard/
 7. [Design](https://github.com/rongyouqi/LeetCode/blob/main/top/hard/Design.md)
 8. [Math](https://github.com/rongyouqi/LeetCode/blob/main/top/hard/Math.md)
 9. [Others](https://github.com/rongyouqi/LeetCode/blob/main/top/hard/Others.md)
-
-## Graph
-
-https://leetcode.com/explore/featured/card/graph/
-
-0. [Graph Overview](https://github.com/rongyouqi/LeetCode/blob/main/graph/Graph%20Overview.md)
-1. Disjoint Set
-2. DFS
-3. BFS
-4. Minimum spanning Tree
-5. Single Source Shortest Path Algorithm
-6. Kahn's Algorithm for Topological Sorting
 
 ## 花花酱
 
