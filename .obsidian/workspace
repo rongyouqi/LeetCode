@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "weekly contest/20220625 Contest 299.md",
+            "file": "blind75/Array.md",
             "mode": "source",
             "source": true
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "weekly contest/20220625 Contest 299.md",
+                "file": "blind75/Array.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +89,7 @@
   },
   "active": "7c4c03109983e085",
   "lastOpenFiles": [
+    "blind75/Array.md",
     "weekly contest/20220625 Contest 299.md",
     "blind75/Tree.md",
     "blind75/String.md",
@@ -97,7 +98,6 @@
     "blind75/Interval.md",
     "blind75/Heap.md",
     "blind75/Graph.md",
-    "blind75/Dynamic Programming.md",
-    "blind75/Binary.md"
+    "blind75/Dynamic Programming.md"
   ]
 }
