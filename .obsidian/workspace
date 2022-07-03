@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "7c4c03109983e085",
+        "id": "912b7a0ca7e62b3e",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "blind75/Array.md",
+            "file": "blind75/Binary.md",
             "mode": "source",
             "source": true
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blind75/Array.md",
+                "file": "blind75/Binary.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,8 +87,9 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "7c4c03109983e085",
+  "active": "912b7a0ca7e62b3e",
   "lastOpenFiles": [
+    "blind75/Binary.md",
     "blind75/Array.md",
     "weekly contest/20220625 Contest 299.md",
     "blind75/Tree.md",
@@ -97,7 +98,6 @@
     "blind75/Linked List.md",
     "blind75/Interval.md",
     "blind75/Heap.md",
-    "blind75/Graph.md",
-    "blind75/Dynamic Programming.md"
+    "blind75/Graph.md"
   ]
 }
