@@ -1,14 +1,30 @@
 # Blind 75 Day 5 (Interval)
 
 * `Arrays.sort()`in Java:
-
     * Time Complexity: O(nlogn)
-
     * Space Complexity: O(logn)
 
-## 1. Insert Interval (medium)
+## 1. [LeetCode 57](https://leetcode.com/problems/insert-interval/) Insert Interval (medium)
 
-[LeetCode 57](https://leetcode.com/problems/insert-interval/)
+- You are given an array of non-overlapping intervals `intervals` where `intervals[i] = [starti, endi]` represent the start and the end of the `ith` interval and `intervals` is sorted in ascending order by `starti`. You are also given an interval `newInterval = [start, end]` that represents the start and end of another interval.
+- Insert `newInterval` into `intervals` such that `intervals` is still sorted in ascending order by `starti` and `intervals` still does not have any overlapping intervals (merge overlapping intervals if necessary).
+- Return `intervals` _after the insertion_.
+- **Example 1:**
+    - **Input:** intervals = `[[1,3],[6,9]]`, newInterval = [2,5]
+    - **Output:** `[[1,5],[6,9]]`
+- **Example 2:**
+    - **Input:** intervals = `[[1,2],[3,5],[6,7],[8,10],[12,16]]`, newInterval = [4,8]
+    - **Output:** `[[1,2],[3,10],[12,16]]`
+    - **Explanation:** Because the new interval [4,8] overlaps with [3,5],[6,7],[8,10].
+- **Constraints:**
+    -   `0 <= intervals.length <= 10^4`
+    -   `intervals[i].length == 2`
+    -   `0 <= starti <= endi <= 10^5`
+    -   `intervals` is sorted by `starti` in **ascending** order.
+    -   `newInterval.length == 2`
+    -   `0 <= start <= end <= 10^5`
+
+### Solution
 
 ```java
 public int[][] insert(int[][] intervals, int[] newInterval) {
@@ -39,9 +55,23 @@ Time Complexity: O(n)
 
 Space Complexity: O(1)
 
-## 2. Merge Intervals (medium)
+## 2. [LeetCode 56](https://leetcode.com/problems/merge-intervals/) Merge Intervals (medium)
 
-[LeetCode 56](https://leetcode.com/problems/merge-intervals/solution/)
+- Given an array of `intervals` where `intervals[i] = [starti, endi]`, merge all overlapping intervals, and return _an array of the non-overlapping intervals that cover all the intervals in the input_.
+- **Example 1:**
+    - **Input:** intervals = `[[1,3],[2,6],[8,10],[15,18]]`
+    - **Output:** `[[1,6],[8,10],[15,18]]`
+    - **Explanation:** Since intervals [1,3] and [2,6] overlap, merge them into [1,6].
+- **Example 2:**
+    - **Input:** intervals = `[[1,4],[4,5]]`
+    - **Output:** `[[1,5]]`
+    - **Explanation:** Intervals [1,4] and [4,5] are considered overlapping.
+- **Constraints:**
+    -   `1 <= intervals.length <= 10^4`
+    -   `intervals[i].length == 2`
+    -   `0 <= starti <= endi <= 10^4`
+
+### Solution
 
 ```java
 public int[][] merge(int[][] intervals) {
@@ -65,9 +95,27 @@ Time Complexity: O(nlogn)
 
 Space Complexity: O(logn)
 
-## 3. Non-overlapping Intervals (medium)
+## 3. [LeetCode 435](https://leetcode.com/problems/non-overlapping-intervals/) Non-overlapping Intervals (medium)
 
-[LeetCode 435](https://leetcode.com/problems/non-overlapping-intervals/)
+- Given an array of intervals `intervals` where `intervals[i] = [starti, endi]`, return _the minimum number of intervals you need to remove to make the rest of the intervals non-overlapping_.
+- **Example 1:**
+    - **Input:** intervals = `[[1,2],[2,3],[3,4],[1,3]]`
+    - **Output:** 1
+    - **Explanation:** [1,3] can be removed and the rest of the intervals are non-overlapping.
+- **Example 2:**
+    - **Input:** intervals = `[[1,2],[1,2],[1,2]]`
+    - **Output:** 2
+    - **Explanation:** You need to remove two [1,2] to make the rest of the intervals non-overlapping.
+- **Example 3:**
+    - **Input:** intervals = `[[1,2],[2,3]]`
+    - **Output:** 0
+    - **Explanation:** You don't need to remove any of the intervals since they're already non-overlapping.
+- **Constraints:**
+    -   `1 <= intervals.length <= 10^5`
+    -   `intervals[i].length == 2`
+    -   `-5 * 10^4 <= starti < endi <= 5 * 10^4`
+
+### Solution
 
 ```java
 public int eraseOverlapIntervals(int[][] intervals) {
@@ -92,11 +140,21 @@ Time Complexity: O(nlogn)
 
 Space Complexity: O(logn)
 
-## 4. Meeting Rooms (easy)
+## 4. [LeetCode 252](https://leetcode.com/problems/meeting-rooms/) Meeting Rooms (easy)
 
-[LeetCode 252](https://leetcode.com/problems/meeting-rooms/)
+- Given an array of meeting time `intervals` where `intervals[i] = [starti, endi]`, determine if a person could attend all meetings.
+- **Example 1:**
+    - **Input:** intervals = `[[0,30],[5,10],[15,20]]`
+    - **Output:** false
+- **Example 2:**
+    - **Input:** intervals = `[[7,10],[2,4]]`
+    - **Output:** true
+- **Constraints:**
+    -   `0 <= intervals.length <= 10^4`
+    -   `intervals[i].length == 2`
+    -   `0 <= starti < endi <= 10^6`
 
-### Solution 1:
+### Solution 1
 
 ```java
 public boolean canAttendMeetings(int[][] intervals) {
@@ -117,7 +175,7 @@ Time Complexity: O(nlogn)
 
 Space Complexity: O(logn)
 
-### Solution 2:
+### Solution 2
 
 ```java
 public boolean canAttendMeetings(int[][] intervals) {
@@ -145,9 +203,20 @@ Time Complexity: O(logn)
 
 Space Complexity: O(n)
 
-## 5. Meeting Rooms II (medium)
+## 5. [LeetCode 253](https://leetcode.com/problems/meeting-rooms-ii/) Meeting Rooms II (medium)
 
-[LeetCode 253](https://leetcode.com/problems/meeting-rooms-ii/)
+- Given an array of meeting time intervals `intervals` where `intervals[i] = [starti, endi]`, return _the minimum number of conference rooms required_.
+- **Example 1:**
+    - **Input:** intervals = `[[0,30],[5,10],[15,20]]`
+    - **Output:** 2
+- **Example 2:**
+    - **Input:** intervals = `[[7,10],[2,4]]`
+    - **Output:** 1
+- **Constraints:**
+    -   `1 <= intervals.length <= 10^4`
+    -   `0 <= starti < endi <= 10^6`
+
+### Solution
 
 ```java
 public int minMeetingRooms(int[][] intervals) {
