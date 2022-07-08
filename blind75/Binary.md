@@ -263,6 +263,8 @@ Space Complexity: O(1)
     -   The input must be a **binary string** of length `32`
 - **Follow up:** If this function is called many times, how would you optimize it?
 
+### Solution
+
 ```java
 public int reverseBits(int n) {
     int i = 0, j = 31;
