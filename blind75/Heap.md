@@ -26,7 +26,7 @@ PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder())
     -   `lists[i]` is sorted in **ascending order**.
     -   The sum of `lists[i].length` will not exceed `10^4`.
 
-### Solution: priority queue
+### Solution: priority queue (min heap)
 
 ```java
 public ListNode mergeKLists(ListNode[] lists) {

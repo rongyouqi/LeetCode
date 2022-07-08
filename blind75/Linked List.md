@@ -1,8 +1,23 @@
 # Blind 75 Day 2 (Linked List)
 
-## 1. Reverse a Linked List (easy)
+## 1. [LeetCode 206](https://leetcode.com/problems/reverse-linked-list/) Reverse a Linked List (easy)
 
-[LeetCode 206](https://leetcode.com/problems/reverse-linked-list/)
+- Given the `head` of a singly linked list, reverse the list, and return _the reversed list_.
+- **Example 1:**
+    - <img src="https://assets.leetcode.com/uploads/2021/02/19/rev1ex1.jpg" style="zoom: 67%;" />
+    - **Input:** head = [1,2,3,4,5]
+    - **Output:** [5,4,3,2,1]
+- **Example 2:**
+    - <img src="https://assets.leetcode.com/uploads/2021/02/19/rev1ex2.jpg" style="zoom:67%;" />
+    - **Input:** head = [1,2]
+    - **Output:** [2,1]
+- **Example 3:**
+    - **Input:** head = []
+    - **Output:** []
+- **Constraints:**
+    -   The number of nodes in the list is the range `[0, 5000]`.
+    -   `-5000 <= Node.val <= 5000`
+- **Follow up:** A linked list can be reversed either iteratively or recursively. Could you implement both?
 
 ### Solution 1: iterative
 
@@ -49,9 +64,31 @@ Time Complexity: O(n)
 
 Space Complexity: O(n)
 
-## 2. Detect Cycle in a Linked List (easy)
+## 2. [LeetCode 141](https://leetcode.com/problems/linked-list-cycle/) Detect Cycle in a Linked List (easy)
 
-[LeetCode 141](https://leetcode.com/problems/linked-list-cycle/)
+- Given `head`, the head of a linked list, determine if the linked list has a cycle in it.
+- There is a cycle in a linked list if there is some node in the list that can be reached again by continuously following the `next` pointer. Internally, `pos` is used to denote the index of the node that tail's `next` pointer is connected to. **Note that `pos` is not passed as a parameter**.
+- Return `true` _if there is a cycle in the linked list_. Otherwise, return `false`.
+- **Example 1:**
+    - <img src="https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist.png" style="zoom: 67%;" />
+    - **Input:** head = [3,2,0,-4], pos = 1
+    - **Output:** true
+    - **Explanation:** There is a cycle in the linked list, where the tail connects to the 1st node (0-indexed).
+- **Example 2:**
+    - <img src="https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test2.png" style="zoom:67%;" />
+    - **Input:** head = [1,2], pos = 0
+    - **Output:** true
+    - **Explanation:** There is a cycle in the linked list, where the tail connects to the 0th node.
+- **Example 3:**
+    - <img src="https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test3.png" style="zoom:67%;" />
+    - **Input:** head = [1], pos = -1
+    - **Output:** false
+    - **Explanation:** There is no cycle in the linked list.
+- **Constraints:**
+    -   The number of the nodes in the list is in the range `[0, 10^4]`.
+    -   `-10^5 <= Node.val <= 10^5`
+    -   `pos` is `-1` or a **valid index** in the linked-list.
+- **Follow up:** Can you solve it using `O(1)`(i.e. constant) memory?
 
 ### Solution: two pointers
 
@@ -77,9 +114,25 @@ Time Complexity: O(n)
 
 Space omplexity: O(1)
 
-## 3. Merge Two Sorted Lists (easy)
+## 3. [LeetCode 21](https://leetcode.com/problems/merge-two-sorted-lists/) Merge Two Sorted Lists (easy)
 
-[LeetCode 21](https://leetcode.com/problems/merge-two-sorted-lists/)
+- You are given the heads of two sorted linked lists `list1` and `list2`.
+- Merge the two lists in a one **sorted** list. The list should be made by splicing together the nodes of the first two lists.
+- Return _the head of the merged linked list_.
+- **Example 1:**
+    - <img src="https://assets.leetcode.com/uploads/2020/10/03/merge_ex1.jpg" style="zoom:67%;" />
+    - **Input:** list1 = [1,2,4], list2 = [1,3,4]
+    - **Output:** [1,1,2,3,4,4]
+- **Example 2:**
+    - **Input:** list1 = [], list2 = []
+    - **Output:** []
+- **Example 3:**
+    - **Input:** list1 = [], list2 = [0]
+    - **Output:** [0]
+- **Constraints:**
+    -   The number of nodes in both lists is in the range `[0, 50]`.
+    -   `-100 <= Node.val <= 100`
+    -   Both `list1` and `list2` are sorted in **non-decreasing** order.
 
 ### Solution: 谁小移谁
 
@@ -114,9 +167,26 @@ Time Complexity: O(n)
 
 Space Complexity: O(1)
 
-## 4. Merge K Sorted Lists (hard)
+## 4. [LeetCode 23](https://leetcode.com/problems/merge-k-sorted-lists/) Merge K Sorted Lists (hard)
 
-[LeetCode 23](https://leetcode.com/problems/merge-k-sorted-lists/)
+- You are given an array of `k` linked-lists `lists`, each linked-list is sorted in ascending order.
+- _Merge all the linked-lists into one sorted linked-list and return it._
+- **Example 1:**
+    - **Input:** lists = `[[1,4,5],[1,3,4],[2,6]]`
+    - **Output:** [1,1,2,3,4,4,5,6]
+- **Example 2:**
+    - **Input:** lists = `[]`
+    - **Output:** []
+- **Example 3:**
+    - **Input:** lists = `[[]]`
+    - **Output:** []
+- **Constraints:**
+    -   `k == lists.length`
+    -   `0 <= k <= 10^4`
+    -   `0 <= lists[i].length <= 500`
+    -   `-10^4 <= lists[i][j] <= 10^4`
+    -   `lists[i]` is sorted in **ascending order**.
+    -   The sum of `lists[i].length` will not exceed `10^4`.
 
 ### Solution: priority queue (min heap)
 
@@ -125,14 +195,11 @@ public ListNode mergeKLists(ListNode[] lists) {
     if (lists == null || lists.length == 0) {
         return null;
     }
-    PriorityQueue<ListNode> pq = new PriorityQueue<>(lists.length, new Comparator<ListNode>() {
-        @Override
-        public int compare(ListNode n1, ListNode n2) {
-            if (n1.val == n2.val) {
-                return 0;
-            }
-            return n1.val < n2.val ? -1 : 1;
+    PriorityQueue<ListNode> pq = new PriorityQueue<>(lists.length, (n1, n2) -> {
+        if (n1.val == n2.val) {
+            return 0;
         }
+        return n1.val < n2.val ? -1 : 1;
     });
     ListNode dummy = new ListNode(0);
     ListNode tail = dummy;
@@ -156,9 +223,25 @@ Time Complexity: O(nlogk)
 
 Space Complexity: O(k)
 
-## 5. Remove Nth Node From End Of List (medium)
+## 5. [LeetCode 19](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) Remove Nth Node From End Of List (medium)
 
-[LeetCode 19](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
+- Given the `head` of a linked list, remove the `nth` node from the end of the list and return its head.
+- **Example 1:**
+    - <img src="https://assets.leetcode.com/uploads/2020/10/03/remove_ex1.jpg" style="zoom:67%;" />
+    - **Input:** head = [1,2,3,4,5], n = 2
+    - **Output:** [1,2,3,5]
+- **Example 2:**
+    - **Input:** head = [1], n = 1
+    - **Output:** []
+- **Example 3:**
+    - **Input:** head = [1,2], n = 1
+    - **Output:** [1]
+- **Constraints:**
+    -   The number of nodes in the list is `sz`.
+    -   `1 <= sz <= 30`
+    -   `0 <= Node.val <= 100`
+    -   `1 <= n <= sz`
+- **Follow up:** Could you do this in one pass?
 
 ### Solution: like sliding window
 
@@ -188,9 +271,24 @@ Time Complexity: O(n)
 
 Space Complexity: O(1)
 
-## 6. Reorder List (medium)
+## 6. [LeetCode 143](https://leetcode.com/problems/reorder-list/) Reorder List (medium)
 
-[LeetCode 143](https://leetcode.com/problems/reorder-list/)
+- You are given the head of a singly linked-list. The list can be represented as: `L0 → L1 → … → Ln - 1 → Ln`
+- _Reorder the list to be on the following form:_ `L0 → Ln → L1 → Ln - 1 → L2 → Ln - 2 → …`
+- You may not modify the values in the list's nodes. Only nodes themselves may be changed.
+- **Example 1:**
+    - <img src="https://assets.leetcode.com/uploads/2021/03/04/reorder1linked-list.jpg" style="zoom:67%;" />
+    - **Input:** head = [1,2,3,4]
+    - **Output:** [1,4,2,3]
+- **Example 2:**
+    - <img src="https://assets.leetcode.com/uploads/2021/03/09/reorder2-linked-list.jpg" style="zoom:67%;" />
+    - **Input:** head = [1,2,3,4,5]
+    - **Output:** [1,5,2,4,3]
+- **Constraints:**
+    -   The number of nodes in the list is in the range `[1, 5 * 10^4]`.
+    -   `1 <= Node.val <= 1000`
+
+### Solution
 
 ```java
 public void reorderList(ListNode head) {
