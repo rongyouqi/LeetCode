@@ -128,11 +128,11 @@ Space Complexity: O(1)
 - You are given an `n x n` 2D `matrix` representing an image, rotate the image by **90** degrees (clockwise).
 - You have to rotate the image [**in-place**](https://en.wikipedia.org/wiki/In-place_algorithm), which means you have to modify the input 2D matrix directly. **DO NOT** allocate another 2D matrix and do the rotation.
 - **Example 1:**
-    - ![](https://assets.leetcode.com/uploads/2020/08/28/mat1.jpg)
+    - <img src="https://assets.leetcode.com/uploads/2020/08/28/mat1.jpg" style="zoom:67%;" />
     - **Input:** matrix = `[[1,2,3],[4,5,6],[7,8,9]]`
     - **Output:** `[[7,4,1],[8,5,2],[9,6,3]]`
 - **Example 2:**
-    - ![](https://assets.leetcode.com/uploads/2020/08/28/mat2.jpg)
+    - <img src="https://assets.leetcode.com/uploads/2020/08/28/mat2.jpg" style="zoom:67%;" />
     - **Input:** matrix = `[[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]]`
     - **Output:** `[[15,13,2,5],[14,3,4,1],[12,6,8,9],[16,7,10,11]]`
 - **Constraints:**
@@ -172,15 +172,15 @@ Space Complexity: O(1)
 - Given an `m x n` grid of characters `board` and a string `word`, return `true` _if_ `word` _exists in the grid_.
 - The word can be constructed from letters of sequentially adjacent cells, where adjacent cells are horizontally or vertically neighboring. The same letter cell may not be used more than once.
 - **Example 1:**
-    - ![](https://assets.leetcode.com/uploads/2020/11/04/word2.jpg)
+    - <img src="https://assets.leetcode.com/uploads/2020/11/04/word2.jpg" style="zoom:67%;" />
     - **Input:** board = `[["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]]`, word = "ABCCED"
     - **Output:** true
 - **Example 2:**
-    - ![](https://assets.leetcode.com/uploads/2020/11/04/word-1.jpg)
+    - <img src="https://assets.leetcode.com/uploads/2020/11/04/word-1.jpg" style="zoom:67%;" />
     - **Input:** board = `[["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]]`, word = "SEE"
     - **Output:** true
 - **Example 3:**
-    - ![](https://assets.leetcode.com/uploads/2020/10/15/word3.jpg)
+    - <img src="https://assets.leetcode.com/uploads/2020/10/15/word3.jpg" style="zoom:67%;" />
     - **Input:** board = `[["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]]`, word = "ABCB"
     - **Output:** false
 - **Constraints:**
