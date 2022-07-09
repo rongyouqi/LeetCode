@@ -9,11 +9,23 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "blind75/Tree.md",
+            "file": "Blind 75.md",
             "mode": "source",
             "source": true
           }
-        }
+        },
+        "group": "c12162151de97956"
+      },
+      {
+        "id": "cc3199611af5f6b9",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "Blind 75.md"
+          }
+        },
+        "group": "c12162151de97956"
       }
     ],
     "direction": "vertical"
@@ -53,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "3832b47e2c5291c9",
@@ -70,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blind75/Tree.md",
+                "file": "Blind 75.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,7 +98,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blind75/Tree.md"
+                "file": "Blind 75.md"
               }
             }
           }
@@ -100,13 +111,13 @@
   },
   "active": "912b7a0ca7e62b3e",
   "lastOpenFiles": [
+    "Blind 75.md",
     "blind75/Tree.md",
     "blind75/String.md",
     "blind75/Matrix.md",
     "blind75/Linked List.md",
-    "blind75/Heap.md",
-    "blind75/20220601 Graph.md",
     "blind75/Interval.md",
+    "blind75/Heap.md",
     "blind75/Graph.md",
     "blind75/Dynamic Programming.md",
     "blind75/Binary.md"
