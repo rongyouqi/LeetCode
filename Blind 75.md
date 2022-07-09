@@ -1,7 +1,3 @@
-# Blind 75
-
-https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions
-
 # Array
 
 ## 1. [LeetCode 1](https://leetcode.com/problems/two-sum/) 2 Sum (easy)
@@ -515,6 +511,8 @@ Time Complexity: O(n)
 
 Space Complexity: O(1)
 
+<div style="page-break-after: always;"></div>
+
 # Binary
 
 * bit operation
@@ -806,6 +804,8 @@ private int swap(int x, int i, int j) {
 Time Complexity: O(1)
 
 Space Complexity: O(1)
+
+<div style="page-break-after: always;"></div>
 
 # Dynamic Programming
 
@@ -1603,6 +1603,8 @@ Time Complexity: O(n)
 
 Space Complexity: O(1)
 
+<div style="page-break-after: always;"></div>
+
 # Graph
 
 ## 1. [LeetCode 133](https://leetcode.com/problems/clone-graph/) Clone Graph (medium)
@@ -2332,6 +2334,8 @@ Time Complexity: O(node + edge)
 
 Space Complexity: O(node + edge)
 
+<div style="page-break-after: always;"></div>
+
 # Heap
 
 ```java
@@ -2579,6 +2583,8 @@ class MedianFinder {
 }
 ```
 
+<div style="page-break-after: always;"></div>
+
 # Interval
 
 * `Arrays.sort()`in Java:
@@ -2820,6 +2826,8 @@ public int minMeetingRooms(int[][] intervals) {
 Time Complexity: O(nlogn)
 
 Space Complexity: O(n)
+
+<div style="page-break-after: always;"></div>
 
 # Linked List
 
@@ -3179,6 +3187,8 @@ Time Complexity: O(n)
 
 Space Complexity: O(1)
 
+<div style="page-break-after: always;"></div>
+
 # Matrix
 
 ## 1. [LeetCode 73](https://leetcode.com/problems/set-matrix-zeroes/) Set Matrix Zeros (medium)
@@ -3412,6 +3422,8 @@ private boolean helper(char[][] board, String word, int i, int j, int index, boo
 Time Complexity: O(mn * 3^L)
 
 Space Complexity: O(L)
+
+<div style="page-break-after: always;"></div>
 
 # String
 
@@ -4013,6 +4025,8 @@ private int stringToInt(String s) {
     return result;
 }
 ```
+
+<div style="page-break-after: always;"></div>
 
 # Tree
 
