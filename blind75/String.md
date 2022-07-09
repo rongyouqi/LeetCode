@@ -7,9 +7,27 @@
     1. convert a digit into its string representation: `char c = (char) (digit + '0');`
     2. interpret an integer as ASCII code: `char c = (char) i;`
 
-## 1. Longest Substring Without Repeating Characters (medium)
+## 1. [LeetCode 3](https://leetcode.com/problems/longest-substring-without-repeating-characters/) Longest Substring Without Repeating Characters (medium)
 
-[LeetCode 3](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
+- Given a string `s`, find the length of the **longest substring** without repeating characters.
+- **Example 1:**
+    - **Input:** s = "abcabcbb"
+    - **Output:** 3
+    - **Explanation:** The answer is "abc", with the length of 3.
+- **Example 2:**
+    - **Input:** s = "bbbbb"
+    - **Output:** 1
+    - **Explanation:** The answer is "b", with the length of 1.
+- **Example 3:**
+    - **Input:** s = "pwwkew"
+    - **Output:** 3
+    - **Explanation:** The answer is "wke", with the length of 3.
+        - Notice that the answer must be a substring, "pwke" is a subsequence and not a substring.
+- **Constraints:**
+    -   `0 <= s.length <= 5 * 10^4`
+    -   `s` consists of English letters, digits, symbols and spaces.
+
+### Solution
 
 ```java
 public int lengthOfLongestSubstring(String s) {
@@ -31,9 +49,24 @@ Time Complexity: O(n)
 
 Space Complexity: O(1)
 
-## 2. Longest Repeating Character Replacement (medium)
+## 2. [LeetCode 424](https://leetcode.com/problems/longest-repeating-character-replacement/) Longest Repeating Character Replacement (medium)
 
-[LeetCode 424](https://leetcode.com/problems/longest-repeating-character-replacement/)
+- You are given a string `s` and an integer `k`. You can choose any character of the string and change it to any other uppercase English character. You can perform this operation at most `k` times.
+- Return _the length of the longest substring containing the same letter you can get after performing the above operations_.
+- **Example 1:**
+    - **Input:** s = "ABAB", k = 2
+    - **Output:** 4
+    - **Explanation:** Replace the two 'A's with two 'B's or vice versa.
+- **Example 2:**
+    - **Input:** s = "AABABBA", k = 1
+    - **Output:** 4
+    - **Explanation:** Replace the one 'A' in the middle with 'B' and form "AABBBBA". The substring "BBBB" has the longest repeating letters, which is 4.
+- **Constraints:**
+    -   `1 <= s.length <= 10^5`
+    -   `s` consists of only uppercase English letters.
+    -   `0 <= k <= s.length`
+
+### Solution
 
 ```java
 public int characterReplacement(String s, int k) {
@@ -58,9 +91,31 @@ Time Complexity: O(n)
 
 Space Complexity: O(n)
 
-## 3. Minimum Window Substring (hard)
+## 3. [LeetCode 76](https://leetcode.com/problems/minimum-window-substring/) Minimum Window Substring (hard)
 
-[LeetCode 76](https://leetcode.com/problems/minimum-window-substring/)
+- Given two strings `s` and `t` of lengths `m` and `n` respectively, return _the **minimum window substring** of_ `s` _such that every character in_ `t` _(**including duplicates**) is included in the window. If there is no such substring__, return the empty string_ `""`_._
+- The testcases will be generated such that the answer is **unique**.
+- A **substring** is a contiguous sequence of characters within the string.
+- **Example 1:**
+    - **Input:** s = "ADOBECODEBANC", t = "ABC"
+    - **Output:** "BANC"
+    - **Explanation:** The minimum window substring "BANC" includes 'A', 'B', and 'C' from string t.
+- **Example 2:**
+    - **Input:** s = "a", t = "a"
+    - **Output:** "a"
+    - **Explanation:** The entire string s is the minimum window.
+- **Example 3:**
+    - **Input:** s = "a", t = "aa"
+    - **Output:** ""
+    - **Explanation:** Both 'a's from t must be included in the window. Since the largest window of s only has one 'a', return empty string.
+- **Constraints:**
+    -   `m == s.length`
+    -   `n == t.length`
+    -   `1 <= m, n <= 10^5`
+    -   `s` and `t` consist of uppercase and lowercase English letters.
+- **Follow up:** Could you find an algorithm that runs in `O(m + n)` time?
+
+### Solution
 
 ```java
 public String minWindow(String s, String t) {
@@ -106,9 +161,22 @@ Time Complexity: O(m + n)
 
 Space Complexity: O(m + n)
 
-## 4. Valid Anagram (easy)
+## 4. [LeetCode 242](https://leetcode.com/problems/valid-anagram/) Valid Anagram (easy)
 
-[LeetCode 242](https://leetcode.com/problems/valid-anagram/)
+- Given two strings `s` and `t`, return `true` _if_ `t` _is an anagram of_ `s`_, and_ `false` _otherwise_.
+- An **Anagram** is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
+- **Example 1:**
+    - **Input:** s = "anagram", t = "nagaram"
+    - **Output:** true
+- **Example 2:**
+    - **Input:** s = "rat", t = "car"
+    - **Output:** false
+- **Constraints:**
+    -   `1 <= s.length, t.length <= 5 * 10^4`
+    -   `s` and `t` consist of lowercase English letters.
+- **Follow up:** What if the inputs contain Unicode characters? How would you adapt your solution to such a case?
+
+### Solution
 
 ```java
 public boolean isAnagram(String s, String t) {
@@ -134,9 +202,23 @@ Time Complexity: O(n)
 
 Space Complexity: O(1)
 
-## 5. Group Anagrams (medium)
+## 5. [LeetCode 49](https://leetcode.com/problems/group-anagrams/) Group Anagrams (medium)
 
-[LeetCode 49](https://leetcode.com/problems/group-anagrams/)
+- Given an array of strings `strs`, group **the anagrams** together. You can return the answer in **any order**.
+- An **Anagram** is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
+- **Example 1:**
+    - **Input:** strs = ["eat","tea","tan","ate","nat","bat"]
+    - **Output:** `[["bat"],["nat","tan"],["ate","eat","tea"]]`
+- **Example 2:**
+    - **Input:** strs = [""]
+    - **Output:** `[[""]]`
+- **Example 3:**
+    - **Input:** strs = ["a"]
+    - **Output:** `[["a"]]`
+- **Constraints:**
+    -   `1 <= strs.length <= 10^4`
+    -   `0 <= strs[i].length <= 100`
+    -   `strs[i]` consists of lowercase English letters.
 
 ### Solution 1
 
@@ -196,9 +278,26 @@ Time Complexity: O(nL)
 
 Space Complexity: O(nL)
 
-## 6. Valid Parentheses (easy)
+## 6. [LeetCode 20](https://leetcode.com/problems/valid-parentheses/) Valid Parentheses (easy)
 
-[LeetCode 20](https://leetcode.com/problems/valid-parentheses/)
+- Given a string `s` containing just the characters `'('`, `')'`, `'{'`, `'}'`, `'['`and `']'`, determine if the input string is valid.
+- An input string is valid if:
+    1.  Open brackets must be closed by the same type of brackets.
+    2.  Open brackets must be closed in the correct order.
+- **Example 1:**
+    - **Input:** s = `"()"`
+    - **Output:** true
+- **Example 2:**
+    - **Input:** s = `"()[]{}"`
+    - **Output:** true
+- **Example 3:**
+    - **Input:** s = `"(]"`
+    - **Output:** false
+- **Constraints:**
+    -   `1 <= s.length <= 10^4`
+    -   `s` consists of parentheses only `'()[]{}'`.
+
+### Solution
 
 ```java
 public boolean isValid(String s) {
@@ -231,9 +330,27 @@ Time Complexity: O(n)
 
 Space Complexity: O(n)
 
-## 7. Valid Palindrome (easy)
+## 7. [LeetCode 125](https://leetcode.com/problems/valid-palindrome/) Valid Palindrome (easy)
 
-[LeetCode 125](https://leetcode.com/problems/valid-palindrome/)
+- A phrase is a **palindrome** if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.
+- Given a string `s`, return `true` _if it is a **palindrome**, or_ `false` _otherwise_.
+- **Example 1:**
+    - **Input:** s = "A man, a plan, a canal: Panama"
+    - **Output:** true
+    - **Explanation:** "amanaplanacanalpanama" is a palindrome.
+- **Example 2:**
+    - **Input:** s = "race a car"
+    - **Output:** false
+    - **Explanation:** "raceacar" is not a palindrome.
+- **Example 3:**
+    - **Input:** s = " "
+    - **Output:** true
+    - **Explanation:** s is an empty string "" after removing non-alphanumeric characters. Since an empty string reads the same forward and backward, it is a palindrome.
+- **Constraints:**
+    -   `1 <= s.length <= 2 * 10^5`
+    -   `s` consists only of printable ASCII characters.
+
+### Solution
 
 ```java
 public boolean isPalindrome(String s) {
@@ -259,9 +376,21 @@ Time Complexity: O(n)
 
 Space Complexity: O(1)
 
-## 8. Longest Palindromic Substring (medium)
+## 8. [LeetCode 5](https://leetcode.com/problems/longest-palindromic-substring/) Longest Palindromic Substring (medium)
 
-[LeetCode 5](https://leetcode.com/problems/longest-palindromic-substring/)
+- Given a string `s`, return _the longest palindromic substring_ in `s`.
+- **Example 1:**
+    - **Input:** s = "babad"
+    - **Output:** "bab"
+    - **Explanation:** "aba" is also a valid answer.
+- **Example 2:**
+    - **Input:** s = "cbbd"
+    - **Output:** "bb"
+- **Constraints:**
+    -   `1 <= s.length <= 1000`
+    -   `s` consist of only digits and English letters.
+
+### Solution: expand from center
 
 ```java
 public String longestPalindrome(String s) {
@@ -289,13 +418,28 @@ private int expand(char[] array, int i, int j) {
 }
 ```
 
-Time Complexity: O(n<sup>2</sup>)
+Time Complexity: O(n^2)
 
 Space Complexity: O(1)
 
-## 9. Palindromic Substrings (medium)
+## 9. [LeetCode 647](https://leetcode.com/problems/palindromic-substrings/) Palindromic Substrings (medium)
 
-[LeetCode 647](https://leetcode.com/problems/palindromic-substrings/)
+- Given a string `s`, return _the number of **palindromic substrings** in it_.
+- A string is a **palindrome** when it reads the same backward as forward.
+- A **substring** is a contiguous sequence of characters within the string.
+- **Example 1:**
+    - **Input:** s = "abc"
+    - **Output:** 3
+    - **Explanation:** Three palindromic strings: "a", "b", "c".
+- **Example 2:**
+    - **Input:** s = "aaa"
+    - **Output:** 6
+    - **Explanation:** Six palindromic strings: "a", "a", "a", "aa", "aa", "aaa".
+- **Constraints:**
+    -   `1 <= s.length <= 1000`
+    -   `s` consists of lowercase English letters.
+
+### Solution
 
 ```java
 public int countSubstrings(String s) {
@@ -322,9 +466,51 @@ Time Complexity: O(n)
 
 Space Complexity: O(1)
 
-## 10. Encode and Decode Strings (medium)
+## 10. [LeetCode 271](https://leetcode.com/problems/encode-and-decode-strings/) Encode and Decode Strings (medium)
 
-[LeetCode 271](https://leetcode.com/problems/encode-and-decode-strings/)
+- Design an algorithm to encode **a list of strings** to **a string**. The encoded string is then sent over the network and is decoded back to the original list of strings.
+- Machine 1 (sender) has the function:
+    ```
+    string encode(vector<string> strs) {
+      // ... your code
+      return encoded_string;
+    }
+    ```
+- Machine 2 (receiver) has the function:
+    ```
+    vector<string> decode(string s) {
+      //... your code
+      return strs;
+    }
+    ```
+- So Machine 1 does: `string encoded_string = encode(strs);` and Machine 2 does: `vector<string> strs2 = decode(encoded_string);`
+- `strs2` in Machine 2 should be the same as `strs` in Machine 1.
+- Implement the `encode` and `decode`methods.
+- You are not allowed to solve the problem using any serialize methods (such as `eval`).
+- **Example 1:**
+    - **Input:** dummy_input = ["Hello","World"]
+    - **Output:** ["Hello","World"]
+    - **Explanation:**
+        ```
+        Machine 1:
+        Codec encoder = new Codec();
+        String msg = encoder.encode(strs);
+        Machine 1 ---msg---> Machine 2
+        
+        Machine 2:
+        Codec decoder = new Codec();
+        String[] strs = decoder.decode(msg);
+        ```
+- **Example 2:**
+    - **Input:** dummy_input = [""]
+    - **Output:** [""]
+- **Constraints:**
+    -   `1 <= strs.length <= 200`
+    -   `0 <= strs[i].length <= 200`
+    -   `strs[i]` contains any possible characters out of `256` valid ASCII characters.
+- **Follow up:** Could you write a generalized algorithm to work on any possible set of characters?
+
+### Solution
 
 ```java
 public String encode(List<String> strs) {
