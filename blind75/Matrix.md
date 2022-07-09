@@ -1,8 +1,28 @@
 # Blind 75 Day 5 (Matrix)
 
-## 1. Set Matrix Zeros (medium)
+## 1. [LeetCode 73](https://leetcode.com/problems/set-matrix-zeroes/) Set Matrix Zeros (medium)
 
-[LeetCode 73](https://leetcode.com/problems/set-matrix-zeroes/)
+- Given an `m x n` integer matrix `matrix`, if an element is `0`, set its entire row and column to `0`'s.
+- You must do it [in place](https://en.wikipedia.org/wiki/In-place_algorithm).
+- **Example 1:**
+    - <img src="https://assets.leetcode.com/uploads/2020/08/17/mat1.jpg" style="zoom:67%;" />
+    - **Input:** matrix = `[[1,1,1],[1,0,1],[1,1,1]]`
+    - **Output:** `[[1,0,1],[0,0,0],[1,0,1]]`
+- **Example 2:**
+    - <img src="https://assets.leetcode.com/uploads/2020/08/17/mat2.jpg" style="zoom:67%;" />
+    - **Input:** matrix = `[[0,1,2,0],[3,4,5,2],[1,3,1,5]]`
+    - **Output:** `[[0,0,0,0],[0,4,5,0],[0,3,1,0]]`
+- **Constraints:**
+    -   `m == matrix.length`
+    -   `n == matrix[0].length`
+    -   `1 <= m, n <= 200`
+    -   `-2^31 <= matrix[i][j] <= 2^31 - 1`
+- **Follow up:**
+    -   A straightforward solution using `O(mn)` space is probably a bad idea.
+    -   A simple improvement uses `O(m + n)` space, but still not the best solution.
+    -   Could you devise a constant space solution?
+
+### Solution
 
 ```java
 public void setZeroes(int[][] matrix) {
@@ -39,9 +59,24 @@ Time Complexity: O(mn)
 
 Space Complexity: O(1)
 
-## 2. Spiral Matrix (medium)
+## 2. [LeetCode 54](https://leetcode.com/problems/spiral-matrix/) Spiral Matrix (medium)
 
-[LeetCode 54](https://leetcode.com/problems/spiral-matrix/)
+- Given an `m x n` `matrix`, return _all elements of the_ `matrix` _in spiral order_.
+- **Example 1:**
+    - <img src="https://assets.leetcode.com/uploads/2020/11/13/spiral1.jpg" style="zoom:67%;" />
+    - **Input:** matrix = `[[1,2,3],[4,5,6],[7,8,9]]`
+    - **Output:** [1,2,3,6,9,8,7,4,5]
+- **Example 2:**
+    - <img src="https://assets.leetcode.com/uploads/2020/11/13/spiral.jpg" style="zoom:67%;" />
+    - **Input:** matrix = `[[1,2,3,4],[5,6,7,8],[9,10,11,12]]`
+    - **Output:** [1,2,3,4,8,12,11,10,9,5,6,7]
+- **Constraints:**
+    -   `m == matrix.length`
+    -   `n == matrix[i].length`
+    -   `1 <= m, n <= 10`
+    -   `-100 <= matrix[i][j] <= 100`
+
+### Solution
 
 ```java
 public List<Integer> spiralOrder(int[][] matrix) {
@@ -88,9 +123,24 @@ Time Complexity: O(mn)
 
 Space Complexity: O(1)
 
-## 3. Rotate Image (medium)
+## 3. [LeetCode 48](https://leetcode.com/problems/rotate-image/) Rotate Image (medium)
 
-[LeetCode 48](https://leetcode.com/problems/rotate-image/)
+- You are given an `n x n` 2D `matrix` representing an image, rotate the image by **90** degrees (clockwise).
+- You have to rotate the image [**in-place**](https://en.wikipedia.org/wiki/In-place_algorithm), which means you have to modify the input 2D matrix directly. **DO NOT** allocate another 2D matrix and do the rotation.
+- **Example 1:**
+    - ![](https://assets.leetcode.com/uploads/2020/08/28/mat1.jpg)
+    - **Input:** matrix = `[[1,2,3],[4,5,6],[7,8,9]]`
+    - **Output:** `[[7,4,1],[8,5,2],[9,6,3]]`
+- **Example 2:**
+    - ![](https://assets.leetcode.com/uploads/2020/08/28/mat2.jpg)
+    - **Input:** matrix = `[[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]]`
+    - **Output:** `[[15,13,2,5],[14,3,4,1],[12,6,8,9],[16,7,10,11]]`
+- **Constraints:**
+    -   `n == matrix.length == matrix[i].length`
+    -   `1 <= n <= 20`
+    -   `-1000 <= matrix[i][j] <= 1000`
+
+### Solution
 
 ```java
 public void rotate(int[][] matrix) {
@@ -113,13 +163,33 @@ public void rotate(int[][] matrix) {
 }
 ```
 
-Time Complexity: O(n<sup>2</sup>)
+Time Complexity: O(n^2)
 
 Space Complexity: O(1)
 
-## 4. Word Search (medium)
+## 4. [LeetCode 79](https://leetcode.com/problems/word-search/) Word Search (medium)
 
-[LeetCode 79](https://leetcode.com/problems/word-search/)
+- Given an `m x n` grid of characters `board` and a string `word`, return `true` _if_ `word` _exists in the grid_.
+- The word can be constructed from letters of sequentially adjacent cells, where adjacent cells are horizontally or vertically neighboring. The same letter cell may not be used more than once.
+- **Example 1:**
+    - ![](https://assets.leetcode.com/uploads/2020/11/04/word2.jpg)
+    - **Input:** board = `[["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]]`, word = "ABCCED"
+    - **Output:** true
+- **Example 2:**
+    - ![](https://assets.leetcode.com/uploads/2020/11/04/word-1.jpg)
+    - **Input:** board = `[["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]]`, word = "SEE"
+    - **Output:** true
+- **Example 3:**
+    - ![](https://assets.leetcode.com/uploads/2020/10/15/word3.jpg)
+    - **Input:** board = `[["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]]`, word = "ABCB"
+    - **Output:** false
+- **Constraints:**
+    -   `m == board.length`
+    -   `n = board[i].length`
+    -   `1 <= m, n <= 6`
+    -   `1 <= word.length <= 15`
+    -   `board` and `word` consists of only lowercase and uppercase English letters.
+- **Follow up:** Could you use search pruning to make your solution faster with a larger `board`?
 
 ### Solution: backtracking
 
@@ -158,6 +228,6 @@ private boolean helper(char[][] board, String word, int i, int j, int index, boo
 }
 ```
 
-Time Complexity: O(mn*3<sup>L</sup>)
+Time Complexity: O(mn * 3^L)
 
 Space Complexity: O(L)
