@@ -491,13 +491,14 @@ Space Complexity: O(1)
     - **Input:** dummy_input = ["Hello","World"]
     - **Output:** ["Hello","World"]
     - **Explanation:**
+        - Machine 1:
         ```
-        Machine 1:
         Codec encoder = new Codec();
         String msg = encoder.encode(strs);
-        Machine 1 ---msg---> Machine 2
-        
-        Machine 2:
+        ```
+        - Machine 1 ---msg---> Machine 2
+        - Machine 2:
+        ```
         Codec decoder = new Codec();
         String[] strs = decoder.decode(msg);
         ```
