@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "blind75/String.md",
+            "file": "blind75/Tree.md",
             "mode": "source",
             "source": true
           }
@@ -53,7 +53,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "3832b47e2c5291c9",
@@ -69,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blind75/String.md",
+                "file": "blind75/Tree.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,7 +87,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blind75/String.md"
+                "file": "blind75/Tree.md"
               }
             }
           }
@@ -99,8 +100,8 @@
   },
   "active": "912b7a0ca7e62b3e",
   "lastOpenFiles": [
-    "blind75/String.md",
     "blind75/Tree.md",
+    "blind75/String.md",
     "blind75/Matrix.md",
     "blind75/Linked List.md",
     "blind75/Heap.md",
