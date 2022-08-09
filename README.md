@@ -4,9 +4,13 @@
 
 https://www.techinterviewhandbook.org
 
-## Grind 75
+## Grind 75 (169)
 
 https://www.techinterviewhandbook.org/grind75?hours=40&weeks=4
+
+## NeetCode 150
+
+https://neetcode.io
 
 ## Graph
 
