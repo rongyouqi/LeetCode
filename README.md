@@ -8,6 +8,10 @@ https://www.techinterviewhandbook.org
 
 https://www.techinterviewhandbook.org/grind75?hours=40&weeks=4
 
+1. [Easy 42](https://github.com/rongyouqi/LeetCode/blob/main/Grind%2075.md#easy-42)
+2. [Medium 101](https://github.com/rongyouqi/LeetCode/blob/main/Grind%2075.md#medium-101)
+3. [Hard 26](https://github.com/rongyouqi/LeetCode/blob/main/Grind%2075.md#hard-26)
+
 ## NeetCode 150
 
 https://neetcode.io
