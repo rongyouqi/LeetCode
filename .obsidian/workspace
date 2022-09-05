@@ -9,23 +9,11 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Blind 75.md",
+            "file": "肌肉记忆.md",
             "mode": "source",
             "source": true
           }
-        },
-        "group": "c12162151de97956"
-      },
-      {
-        "id": "cc3199611af5f6b9",
-        "type": "leaf",
-        "state": {
-          "type": "outline",
-          "state": {
-            "file": "Blind 75.md"
-          }
-        },
-        "group": "c12162151de97956"
+        }
       }
     ],
     "direction": "vertical"
@@ -65,7 +53,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "3832b47e2c5291c9",
@@ -81,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blind 75.md",
+                "file": "肌肉记忆.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +87,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blind 75.md"
+                "file": "肌肉记忆.md"
               }
             }
           }
