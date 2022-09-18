@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "weekly contest/20220910 Contest 310.md",
+            "file": "weekly contest/20220917 Contest 311.md",
             "mode": "source",
             "source": true
           }
@@ -53,7 +53,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "3832b47e2c5291c9",
@@ -69,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "weekly contest/20220910 Contest 310.md",
+                "file": "weekly contest/20220917 Contest 311.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,7 +87,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "weekly contest/20220910 Contest 310.md"
+                "file": "weekly contest/20220917 Contest 311.md"
               }
             }
           }
@@ -99,15 +100,15 @@
   },
   "active": "912b7a0ca7e62b3e",
   "lastOpenFiles": [
+    "weekly contest/20220910 Contest 310.md",
     "weekly contest/20220903 Contest 309.md",
-    "Best Time to Buy and Sell Stock.md",
-    "肌肉记忆.md",
-    "Blind 75.md",
-    "blind75/Tree.md",
-    "blind75/String.md",
-    "blind75/Matrix.md",
-    "blind75/Linked List.md",
-    "blind75/Interval.md",
-    "blind75/Heap.md"
+    "weekly contest/20220827 Contest 308.md",
+    "weekly contest/20220917 Contest 311.md",
+    "top/hard/Backtracking.md",
+    "top/hard/Others.md",
+    "top/hard/Sorting and Searching.md",
+    "top/hard/Design.md",
+    "top/medium/Design.md",
+    "top/medium/Array and Strings.md"
   ]
 }
