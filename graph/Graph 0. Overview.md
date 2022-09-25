@@ -1,4 +1,4 @@
-# Graph Day 0 (Overview)
+# Graph 0: Overview
 
 https://leetcode.com/explore/featured/card/graph/
 
@@ -8,7 +8,7 @@ https://leetcode.com/explore/featured/card/graph/
 
 <img src="https://assets.leetcode.com/static_assets/explore/The_basic_of_graph_1.png" style="zoom: 33%;" />
 
-Figure 1. An example of a undirected graph.
+_Figure 1. An example of a undirected graph._
 
 In Figure 1 above, we can see that person G, B, and E are all direct friends of A, while person C, D, and F are indirect friends of A. This example is a social graph of friendship. So, what is the “graph” data structure?
 
@@ -30,7 +30,7 @@ Figure 2 is an example of a directed graph.
 
 <img src="https://assets.leetcode.com/static_assets/explore/The_basic_of_graph_2.png" style="zoom:33%;" />
 
-Figure 2. An example of a directed graph.
+_Figure 2. An example of a directed graph._
 
 ### Weighted graphs
 
@@ -38,7 +38,7 @@ Each edge in a “weighted graph” has an associated weight. The weight can be 
 
 <img src="https://assets.leetcode.com/static_assets/explore/The_basic_of_graph_3.png" style="zoom: 67%;" />
 
-Figure 3. An example of a weighted graph.
+_Figure 3. An example of a weighted graph._
 
 ## 3. The Definition of “graph” and Terminologies
 
@@ -60,4 +60,4 @@ Figure 3. An example of a weighted graph.
 
 ![](https://assets.leetcode.com/static_assets/explore/4._Negative_Cycle.png)
 
-Figure 4. An example of a negative weight cycle.
+_Figure 4. An example of a negative weight cycle._
