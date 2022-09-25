@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "weekly contest/20220917 Contest 311.md",
+            "file": "weekly contest/20220924 Contest 312.md",
             "mode": "source",
             "source": true
           }
@@ -70,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "weekly contest/20220917 Contest 311.md",
+                "file": "weekly contest/20220924 Contest 312.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,7 +87,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "weekly contest/20220917 Contest 311.md"
+                "file": "weekly contest/20220924 Contest 312.md"
               }
             }
           }
@@ -98,17 +98,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "912b7a0ca7e62b3e",
+  "active": "054f72c98d6c46fa",
   "lastOpenFiles": [
+    "weekly contest/20220917 Contest 311.md",
+    "monthly challenge/202209.md",
     "weekly contest/20220910 Contest 310.md",
     "weekly contest/20220903 Contest 309.md",
     "weekly contest/20220827 Contest 308.md",
-    "weekly contest/20220917 Contest 311.md",
     "top/hard/Backtracking.md",
     "top/hard/Others.md",
     "top/hard/Sorting and Searching.md",
     "top/hard/Design.md",
-    "top/medium/Design.md",
-    "top/medium/Array and Strings.md"
+    "top/medium/Design.md"
   ]
 }
