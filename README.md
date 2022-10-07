@@ -21,7 +21,7 @@ https://neetcode.io
 https://leetcode.com/explore/featured/card/graph/
 
 0. [Graph Overview](https://github.com/rongyouqi/LeetCode/blob/main/graph/Graph%20Overview.md)
-1. Disjoint Set
+1. [Disjoint Set](https://github.com/rongyouqi/LeetCode/blob/main/graph/Graph%201.%20Disjoint%20Set.md)
 2. DFS
 3. BFS
 4. Minimum spanning Tree
