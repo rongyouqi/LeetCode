@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "README.md",
+            "file": "number/2.md",
             "mode": "source",
             "source": true
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "number/2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,7 +86,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "number/2.md"
               }
             }
           }
@@ -99,9 +99,9 @@
   },
   "active": "912b7a0ca7e62b3e",
   "lastOpenFiles": [
+    "README.md",
     "number/16.md",
     "number/1.md",
-    "README.md",
     "weekly contest/20221001 Contest 313.md",
     "weekly contest/20220924 Contest 312.md",
     "graph/Graph 1. Disjoint Set.md",
