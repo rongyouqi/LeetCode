@@ -104,7 +104,7 @@ https://leetcode.com/explore/interview/card/top-interview-questions-hard/
 
 | No.  | Easy/Medium/Hard | Comment |
 |------|------------------|---------|
-| 1    |                  |         |
+|[1. Two Sum](https://github.com/rongyouqi/LeetCode/blob/main/number/1.md)|Easy|HashMap|
 | 2    |                  |         |
 | 3    |                  |         |
 | 4    |                  |         |
@@ -119,7 +119,7 @@ https://leetcode.com/explore/interview/card/top-interview-questions-hard/
 | 13   |                  |         |
 | 14   |                  |         |
 | 15   |                  |         |
-| 16   |                  |         |
+|[16](https://github.com/rongyouqi/LeetCode/blob/main/number/16.md)|Medium|         |
 | 17   |                  |         |
 | 18   |                  |         |
 | 19   |                  |         |
