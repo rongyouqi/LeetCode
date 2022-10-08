@@ -1,5 +1,7 @@
 # LeetCode Collections
 
+[Table of Solutions](https://github.com/rongyouqi/LeetCode/blob/main/number/0%20table.md)
+
 ## Tech Interview Handbook
 
 https://www.techinterviewhandbook.org

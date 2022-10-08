@@ -1,4 +1,4 @@
-## LeetCode Table
+# LeetCode Table
 
 | No.                                                          | Easy/Medium/Hard | Comment |
 | ------------------------------------------------------------ | ---------------- | ------- |
