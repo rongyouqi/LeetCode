@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "number/2.md",
+            "file": "number/4.md",
             "mode": "source",
             "source": true
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "number/2.md",
+                "file": "number/4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,7 +86,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "number/2.md"
+                "file": "number/4.md"
               }
             }
           }
@@ -99,6 +99,7 @@
   },
   "active": "912b7a0ca7e62b3e",
   "lastOpenFiles": [
+    "number/2.md",
     "README.md",
     "number/16.md",
     "number/1.md",
@@ -107,7 +108,6 @@
     "graph/Graph 1. Disjoint Set.md",
     "graph/Graph 0. Overview.md",
     "weekly contest/20220917 Contest 311.md",
-    "monthly challenge/202209.md",
-    "weekly contest/20220910 Contest 310.md"
+    "monthly challenge/202209.md"
   ]
 }
