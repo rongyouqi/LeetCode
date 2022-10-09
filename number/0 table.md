@@ -2433,10 +2433,10 @@
 | 2429                                                         |                  |         |
 | 2430                                                         |                  |         |
 | 2431                                                         |                  |         |
-| 2432                                                         |                  |         |
-| 2433                                                         |                  |         |
-| 2434                                                         |                  |         |
-| 2435                                                         |                  |         |
+| [2432. The Employee That Worked on the Longest Task](https://github.com/rongyouqi/LeetCode/blob/main/number/2432.md) | Easy             |         |
+| [2433. Find the Original Array of Prefix XOR](https://github.com/rongyouqi/LeetCode/blob/main/number/2433.md) | Medium           |         |
+| [2434. Using a Robot to Print the Lexicographically Smallest String](https://github.com/rongyouqi/LeetCode/blob/main/number/2434.md) | Medium           |         |
+| [2435. Paths in Matrix Whose Sum Is Divisible by K](https://github.com/rongyouqi/LeetCode/blob/main/number/2435.md) | Hard             | 3D dp   |
 | 2436                                                         |                  |         |
 | 2437                                                         |                  |         |
 | 2438                                                         |                  |         |
