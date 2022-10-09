@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "number/4.md",
+            "file": "weekly contest/20221008 Contest 314.md",
             "mode": "source",
             "source": true
           }
@@ -53,7 +53,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "3832b47e2c5291c9",
@@ -69,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "number/4.md",
+                "file": "weekly contest/20221008 Contest 314.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,7 +87,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "number/4.md"
+                "file": "weekly contest/20221008 Contest 314.md"
               }
             }
           }
@@ -99,6 +100,7 @@
   },
   "active": "912b7a0ca7e62b3e",
   "lastOpenFiles": [
+    "number/4.md",
     "number/2.md",
     "README.md",
     "number/16.md",
@@ -107,7 +109,6 @@
     "weekly contest/20220924 Contest 312.md",
     "graph/Graph 1. Disjoint Set.md",
     "graph/Graph 0. Overview.md",
-    "weekly contest/20220917 Contest 311.md",
-    "monthly challenge/202209.md"
+    "weekly contest/20220917 Contest 311.md"
   ]
 }
