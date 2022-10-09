@@ -654,7 +654,7 @@
 | 650                                                          |                  |         |
 | 651                                                          |                  |         |
 | 652                                                          |                  |         |
-| [653. Two Sum IV - Input is a BST](https://github.com/rongyouqi/LeetCode/blob/main/number/653.md) | Easy             |         |
+| [653. Two Sum IV - Input is a BST](https://github.com/rongyouqi/LeetCode/blob/main/number/653.md) | Easy             | HashSet |
 | 654                                                          |                  |         |
 | 655                                                          |                  |         |
 | 656                                                          |                  |         |
@@ -717,7 +717,7 @@
 | 713                                                          |                  |         |
 | 714                                                          |                  |         |
 | 715                                                          |                  |         |
-| 716                                                          |                  |         |
+| [716. Max Stack](https://github.com/rongyouqi/LeetCode/blob/main/number/716.md) | Hard             | TreeSet |
 | 717                                                          |                  |         |
 | 718                                                          |                  |         |
 | 719                                                          |                  |         |
