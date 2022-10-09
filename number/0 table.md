@@ -323,7 +323,7 @@
 | 319                                                          |                  |         |
 | 320                                                          |                  |         |
 | 321                                                          |                  |         |
-| 322                                                          |                  |         |
+| [322. Coin Change](https://github.com/rongyouqi/LeetCode/blob/main/number/322.md) | Medium           | dp      |
 | 323                                                          |                  |         |
 | 324                                                          |                  |         |
 | 325                                                          |                  |         |
