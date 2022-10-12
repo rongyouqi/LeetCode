@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "number/976.md",
+            "file": "number/0 table.md",
             "mode": "source",
             "source": true
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "number/976.md",
+                "file": "number/0 table.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,7 +86,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "number/976.md"
+                "file": "number/0 table.md"
               }
             }
           }
@@ -99,15 +99,15 @@
   },
   "active": "912b7a0ca7e62b3e",
   "lastOpenFiles": [
+    "number/99.md",
+    "number/105.md",
+    "number/124.md",
+    "number/976.md",
     "number/2049.md",
     "number/334.md",
     "number/1328.md",
     "number/716.md",
     "number/653.md",
-    "number/322.md",
-    "number/2435.md",
-    "number/2434.md",
-    "number/2433.md",
-    "number/0 table.md"
+    "number/322.md"
   ]
 }
