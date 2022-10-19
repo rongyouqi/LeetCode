@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "number/38.md",
+            "file": "number/945.md",
             "mode": "source",
             "source": true
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "number/38.md",
+                "file": "number/945.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,7 +86,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "number/38.md"
+                "file": "number/945.md"
               }
             }
           }
@@ -99,15 +99,15 @@
   },
   "active": "912b7a0ca7e62b3e",
   "lastOpenFiles": [
+    "number/1796.md",
+    "number/692.md",
+    "number/38.md",
     "weekly contest/20221015 Contest 315.md",
     "number/2444.md",
     "number/2443.md",
     "number/2442.md",
     "number/2441.md",
     "weekly contest/20221008 Contest 314.md",
-    "number/1832.md",
-    "number/1335.md",
-    "number/800.md",
-    "number/1531.md"
+    "number/1832.md"
   ]
 }
