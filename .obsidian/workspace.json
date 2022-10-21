@@ -1,0 +1,124 @@
+{
+  "main": {
+    "id": "a596d59c946e0f26",
+    "type": "split",
+    "children": [
+      {
+        "id": "d2c3d267b459d5f3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "912b7a0ca7e62b3e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "number/220.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "bd88c9f12f49913c",
+    "type": "split",
+    "children": [
+      {
+        "id": "e6664c7d9a006c13",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "054f72c98d6c46fa",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "c2fab7186aa61130",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "3832b47e2c5291c9",
+    "type": "split",
+    "children": [
+      {
+        "id": "8fa8a68aeed51f15",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "872cb934ba3de99f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "number/220.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "7d350133186b8f54",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "number/220.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "ribbon": {
+    "mostRecentAction": ""
+  },
+  "active": "912b7a0ca7e62b3e",
+  "lastOpenFiles": [
+    "number/217.md",
+    "number/219.md",
+    "number/12.md",
+    "number/323.md",
+    "number/62.md",
+    "number/945.md",
+    "number/1796.md",
+    "number/692.md",
+    "number/38.md",
+    "weekly contest/20221015 Contest 315.md"
+  ]
+}
