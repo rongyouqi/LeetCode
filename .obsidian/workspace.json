@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "number/76.md",
+                "file": "number/2449.md",
                 "mode": "source",
                 "source": true
               }
             }
+          },
+          {
+            "id": "d82296987d143edc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "weekly contest/20221022 Contest 316.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -77,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "number/76.md",
+                "file": "weekly contest/20221022 Contest 316.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +107,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "number/76.md"
+                "file": "weekly contest/20221022 Contest 316.md"
               }
             }
           }
@@ -108,17 +121,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "912b7a0ca7e62b3e",
+  "active": "d82296987d143edc",
   "lastOpenFiles": [
-    "number/468*.md",
-    "number/716.md",
-    "number/1796.md",
-    "number/220.md",
-    "number/217.md",
-    "number/219.md",
-    "number/12.md",
-    "number/323.md",
-    "number/62.md",
-    "number/945.md"
+    "number/2449.md",
+    "number/2447.md",
+    "weekly contest/20221022 Contest 316.md",
+    "number/2448.md",
+    "number/2446.md",
+    "weekly contest/20221015 Contest 315.md",
+    "number/645.md",
+    "number/296.md",
+    "number/76.md",
+    "number/468*.md"
   ]
 }
