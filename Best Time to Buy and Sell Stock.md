@@ -1,5 +1,78 @@
 # Best Time to Buy and Sell Stock
 
+<img src="https://labuladong.github.io/algo/images/%e8%82%a1%e7%a5%a8%e9%97%ae%e9%a2%98/1.png" alt="img" style="zoom:67%;" />
+
+```java
+// 同时考虑交易次数的限制、冷冻期和手续费
+int maxProfit_all_in_one(int max_k, int[] prices, int cooldown, int fee) {
+    int n = prices.length;
+    if (n <= 0) {
+        return 0;
+    }
+    if (max_k > n / 2) {
+        // 交易次数 k 没有限制的情况
+        return maxProfit_k_inf(prices, cooldown, fee);
+    }
+
+    int[][][] dp = new int[n][max_k + 1][2];
+    // k = 0 时的 base case
+    for (int i = 0; i < n; i++) {
+        dp[i][0][1] = Integer.MIN_VALUE;
+        dp[i][0][0] = 0;
+    }
+
+    for (int i = 0; i < n; i++) 
+        for (int k = max_k; k >= 1; k--) {
+            if (i - 1 == -1) {
+                // base case 1
+                dp[i][k][0] = 0;
+                dp[i][k][1] = -prices[i] - fee;
+                continue;
+            }
+
+            // 包含 cooldown 的 base case
+            if (i - cooldown - 1 < 0) {
+                // base case 2
+                dp[i][k][0] = Math.max(dp[i-1][k][0], dp[i-1][k][1] + prices[i]);
+                // 别忘了减 fee
+                dp[i][k][1] = Math.max(dp[i-1][k][1], -prices[i] - fee);
+                continue;
+            }
+            dp[i][k][0] = Math.max(dp[i-1][k][0], dp[i-1][k][1] + prices[i]);
+            // 同时考虑 cooldown 和 fee
+            dp[i][k][1] = Math.max(dp[i-1][k][1], dp[i-cooldown-1][k-1][0] - prices[i] - fee);     
+        }
+    return dp[n - 1][max_k][0];
+}
+
+// k 无限制，包含手续费和冷冻期
+int maxProfit_k_inf(int[] prices, int cooldown, int fee) {
+    int n = prices.length;
+    int[][] dp = new int[n][2];
+    for (int i = 0; i < n; i++) {
+        if (i - 1 == -1) {
+            // base case 1
+            dp[i][0] = 0;
+            dp[i][1] = -prices[i] - fee;
+            continue;
+        }
+
+        // 包含 cooldown 的 base case
+        if (i - cooldown - 1 < 0) {
+            // base case 2
+            dp[i][0] = Math.max(dp[i-1][0], dp[i-1][1] + prices[i]);
+            // 别忘了减 fee
+            dp[i][1] = Math.max(dp[i-1][1], -prices[i] - fee);
+            continue;
+        }
+        dp[i][0] = Math.max(dp[i - 1][0], dp[i - 1][1] + prices[i]);
+        // 同时考虑 cooldown 和 fee
+        dp[i][1] = Math.max(dp[i - 1][1], dp[i - cooldown - 1][0] - prices[i] - fee);
+    }
+    return dp[n - 1][0];
+}
+```
+
 ## 1. [LeetCode 121](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) Best Time to Buy and Sell Stock (easy)
 
 - You are given an array `prices` where `prices[i]` is the price of a given stock on the `ith` day.
@@ -116,3 +189,34 @@ Time Complexity: O(n)
 
 Space Complexity: O(1)
 
+## 4. [LeetCode 188](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/) Best Time to Buy and Sell Stock IV (hard)
+
+- You are given an integer array `prices` where `prices[i]` is the price of a given stock on the `ith` day, and an integer `k`.
+- Find the maximum profit you can achieve. You may complete at most `k` transactions.
+- **Note:** You may not engage in multiple transactions simultaneously (i.e., you must sell the stock before you buy again).
+- **Example 1:**
+    - **Input:** k = 2, prices = [2,4,1]
+    - **Output:** 2
+    - **Explanation:** Buy on day 1 (price = 2) and sell on day 2 (price = 4), profit = 4-2 = 2.
+- **Example 2:**
+    - **Input:** k = 2, prices = [3,2,6,5,0,3]
+    - **Output:** 7
+    - **Explanation:** Buy on day 2 (price = 2) and sell on day 3 (price = 6), profit = 6-2 = 4. Then buy on day 5 (price = 0) and sell on day 6 (price = 3), profit = 3-0 = 3.
+- **Constraints:**
+    -   `1 <= k <= 100`
+    -   `1 <= prices.length <= 1000`
+    -   `0 <= prices[i] <= 1000`
+
+### Solution
+
+```java
+public int maxProfit(int k, int[] prices) {
+	
+}
+```
+
+Time Complexity: O()
+
+Space Complexity: O()
+
+## 5. [LeetCode ]

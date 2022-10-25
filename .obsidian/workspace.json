@@ -25,8 +25,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "weekly contest/20221022 Contest 316.md",
-                "mode": "preview",
+                "file": "Best Time to Buy and Sell Stock.md",
+                "mode": "source",
                 "source": true
               }
             }
@@ -90,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "weekly contest/20221022 Contest 316.md",
+                "file": "Best Time to Buy and Sell Stock.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +107,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "weekly contest/20221022 Contest 316.md"
+                "file": "Best Time to Buy and Sell Stock.md"
               }
             }
           }
@@ -123,15 +123,15 @@
   },
   "active": "d82296987d143edc",
   "lastOpenFiles": [
+    "number/1239.md",
+    "weekly contest/20221022 Contest 316.md",
     "number/2449.md",
     "number/2447.md",
-    "weekly contest/20221022 Contest 316.md",
     "number/2448.md",
     "number/2446.md",
     "weekly contest/20221015 Contest 315.md",
     "number/645.md",
     "number/296.md",
-    "number/76.md",
-    "number/468*.md"
+    "number/76.md"
   ]
 }
