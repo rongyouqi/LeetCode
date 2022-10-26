@@ -1,5 +1,15 @@
 # Best Time to Buy and Sell Stock
 
+```java
+// base case
+dp[-1][...][0] = dp[...][0][0] = 0
+dp[-1][...][1] = dp[...][0][1] = -infinity
+
+// induction rule
+dp[i][k][0] = max(dp[i-1][k][0], dp[i-1][k][1] + prices[i])
+dp[i][k][1] = max(dp[i-1][k][1], dp[i-1][k-1][0] - prices[i])
+```
+
 <img src="https://labuladong.github.io/algo/images/%e8%82%a1%e7%a5%a8%e9%97%ae%e9%a2%98/1.png" alt="img" style="zoom:67%;" />
 
 ```java
@@ -181,7 +191,20 @@ Space Complexity: O(1)
 
 ```java
 public int maxProfit(int[] prices) {
-    
+    return maxProfit(2, prices);
+}
+
+private int maxProfit(int k, int[] prices) {
+	int[] profit = new int[k + 1], cost = new int[k + 1];
+	profit[0] = 0;
+	Arrays.fill(cost, Integer.MAX_VALUE);
+	for (int price : prices) {
+    	for (int i = 0; i < k; i++) {
+        	cost[i + 1] = Math.min(cost[i + 1], price - profit[i]);
+        	profit[i + 1] = Math.max(profit[i + 1], price - cost[i + 1]);
+    	}
+	}
+	return profit[k];
 }
 ```
 
@@ -211,12 +234,144 @@ Space Complexity: O(1)
 
 ```java
 public int maxProfit(int k, int[] prices) {
-	
+	int[] profit = new int[k + 1], cost = new int[k + 1];
+	profit[0] = 0;
+	Arrays.fill(cost, Integer.MAX_VALUE);
+	for (int price : prices) {
+    	for (int i = 0; i < k; i++) {
+        	cost[i + 1] = Math.min(cost[i + 1], price - profit[i]);
+        	profit[i + 1] = Math.max(profit[i + 1], price - cost[i + 1]);
+    	}
+	}
+	return profit[k];
 }
 ```
 
-Time Complexity: O()
+Time Complexity: O(nk)
 
-Space Complexity: O()
+Space Complexity: O(k)
 
-## 5. [LeetCode ]
+## 5. [LeetCode 309](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/) Best Time to Buy and Sell Stock with Cooldown (medium)
+
+- You are given an array `prices` where `prices[i]` is the price of a given stock on the `ith` day.
+- Find the maximum profit you can achieve. You may complete as many transactions as you like (i.e., buy one and sell one share of the stock multiple times) with the following restrictions:
+    -   After you sell your stock, you cannot buy stock on the next day (i.e., cooldown one day).
+- **Note:** You may not engage in multiple transactions simultaneously (i.e., you must sell the stock before you buy again).
+- **Example 1:**
+    - **Input:** prices = [1,2,3,0,2]
+    - **Output:** 3
+    - **Explanation:** transactions = [buy, sell, cooldown, buy, sell]
+- **Example 2:**
+    - **Input:** prices = [1]
+    - **Output:** 0
+- **Constraints:**
+    -   `1 <= prices.length <= 5000`
+    -   `0 <= prices[i] <= 1000`
+
+### Solution
+
+```java
+public int maxProfit(int[] prices) {
+	int sold = 0, hold = Integer.MIN_VALUE, rest = 0;
+    for (int price : prices) {
+        int prevSold = sold;
+        sold = hold + price;
+        hold = Math.max(hold, rest - price);
+        rest = Math.max(rest, prevSold);
+    }
+    return Math.max(sold, rest);
+}
+```
+
+Time Complexity: O(n)
+
+Space Complexity: O(1)
+
+## 6. [LeetCode 714](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/) Best Time to Buy and Sell Stock with Transaction Fee (medium)
+
+- You are given an array `prices` where `prices[i]` is the price of a given stock on the `ith` day, and an integer `fee` representing a transaction fee.
+- Find the maximum profit you can achieve. You may complete as many transactions as you like, but you need to pay the transaction fee for each transaction.
+- **Note:** You may not engage in multiple transactions simultaneously (i.e., you must sell the stock before you buy again).
+- **Example 1:**
+    - **Input:** prices = [1,3,2,8,4,9], fee = 2
+    - **Output:** 8
+    - **Explanation:** The maximum profit can be achieved by:
+        - Buying at prices[0] = 1
+        - Selling at prices[3] = 8
+        - Buying at prices[4] = 4
+        - Selling at prices[5] = 9
+        - The total profit is ((8 - 1) - 2) + ((9 - 4) - 2) = 8.
+- **Example 2:**
+    - **Input:** prices = [1,3,7,5,10,3], fee = 3
+    - **Output:** 6
+- **Constraints:**
+    -   `1 <= prices.length <= 5 * 10^4`
+    -   `1 <= prices[i] < 5 * 10^4`
+    -   `0 <= fee < 5 * 10^4`
+
+### Solution
+
+```java
+public int maxProfit(int[] prices, int fee) {
+	int sold = 0, hold = -prices[0];
+    for (int price : prices) {
+        sold = Math.max(sold, hold + price - fee);
+        hold = Math.max(hold, sold - price);
+    }
+    return sold;
+}
+```
+
+Time Complexity: O(n)
+
+Space Complexity: O(1)
+
+## [LeetCode 2291](https://leetcode.com/problems/maximum-profit-from-trading-stocks/) Maximum Profit From Trading Stocks (medium)
+
+- You are given two **0-indexed** integer arrays of the same length `present` and `future` where `present[i]` is the current price of the `ith` stock and `future[i]` is the price of the `ith` stock a year in the future. You may buy each stock at most **once**. You are also given an integer `budget` representing the amount of money you currently have.
+- Return _the maximum amount of profit you can make._
+- **Example 1:**
+    - **Input:** present = [5,4,6,2,3], future = [8,5,4,3,5], budget = 10
+    - **Output:** 6
+    - **Explanation:** One possible way to maximize your profit is to:
+        - Buy the 0th, 3rd, and 4th stocks for a total of 5 + 2 + 3 = 10.
+        - Next year, sell all three stocks for a total of 8 + 3 + 5 = 16.
+        - The profit you made is 16 - 10 = 6.
+        - It can be shown that the maximum profit you can make is 6.
+- **Example 2:**
+    - **Input:** present = [2,2,5], future = [3,4,10], budget = 6
+    - **Output:** 5
+    - **Explanation:** The only possible way to maximize your profit is to:
+        - Buy the 2nd stock, and make a profit of 10 - 5 = 5.
+        - It can be shown that the maximum profit you can make is 5.
+- **Example 3:**
+    - **Input:** present = [3,3,12], future = [0,3,15], budget = 10
+    - **Output:** 0
+    - **Explanation:** One possible way to maximize your profit is to:
+        - Buy the 1st stock, and make a profit of 3 - 3 = 0.
+        - It can be shown that the maximum profit you can make is 0.
+- **Constraints:**
+    -   `n == present.length == future.length`
+    -   `1 <= n <= 1000`
+    -   `0 <= present[i], future[i] <= 100`
+    -   `0 <= budget <= 1000`
+
+### Solution
+
+```java
+public int maximumProfit(int[] present, int[] future, int budget) {
+    int[] dp = new int[budget + 1];
+    for (int i = 0; i < present.length; i++) {
+        for (int j = budget; j >= 0; j--) {
+            if (present[i] <= j && present[i] < future[i]) {
+                dp[j] = Math.max(dp[j], dp[j - present[i]] + future[i] - present[i]);
+            }
+        }
+    }
+    return dp[budget];
+}
+```
+
+Time Complexity: O(n * budget)
+
+Space Complexity: O(budget)

@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "d2c3d267b459d5f3",
+        "id": "6691ad84df438b9f",
         "type": "tabs",
         "children": [
           {
-            "id": "912b7a0ca7e62b3e",
+            "id": "368079d8b6a0e3f5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "number/2449.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "d82296987d143edc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Best Time to Buy and Sell Stock.md",
+                "file": "number/523.md",
                 "mode": "source",
                 "source": true
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -74,7 +61,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "3832b47e2c5291c9",
@@ -90,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Best Time to Buy and Sell Stock.md",
+                "file": "number/523.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +95,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Best Time to Buy and Sell Stock.md"
+                "file": "number/523.md"
               }
             }
           }
@@ -121,17 +109,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "d82296987d143edc",
+  "active": "368079d8b6a0e3f5",
   "lastOpenFiles": [
+    "Best Time to Buy and Sell Stock.md",
+    "number/2449.md",
+    "number/1662.md",
     "number/1239.md",
     "weekly contest/20221022 Contest 316.md",
-    "number/2449.md",
     "number/2447.md",
     "number/2448.md",
     "number/2446.md",
     "weekly contest/20221015 Contest 315.md",
-    "number/645.md",
-    "number/296.md",
-    "number/76.md"
+    "number/645.md"
   ]
 }
