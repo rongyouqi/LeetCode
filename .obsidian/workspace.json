@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "number/523.md",
+                "file": "Best Time to Buy and Sell Stock.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "ec8730e40853461c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Jump Game.md",
                 "mode": "source",
                 "source": true
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -61,8 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "3832b47e2c5291c9",
@@ -78,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "number/523.md",
+                "file": "Jump Game.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +107,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "number/523.md"
+                "file": "Jump Game.md"
               }
             }
           }
@@ -109,17 +121,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "368079d8b6a0e3f5",
+  "active": "ec8730e40853461c",
   "lastOpenFiles": [
     "Best Time to Buy and Sell Stock.md",
+    "number/835.md",
+    "Jump Game.md",
+    "number/523.md",
     "number/2449.md",
     "number/1662.md",
     "number/1239.md",
     "weekly contest/20221022 Contest 316.md",
     "number/2447.md",
-    "number/2448.md",
-    "number/2446.md",
-    "weekly contest/20221015 Contest 315.md",
-    "number/645.md"
+    "number/2448.md"
   ]
 }
