@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "肌肉记忆.md",
+                "file": "number/1004.md",
                 "mode": "source",
                 "source": true
               }
@@ -90,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "肌肉记忆.md",
+                "file": "number/1004.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +107,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "肌肉记忆.md"
+                "file": "number/1004.md"
               }
             }
           }
@@ -123,15 +123,15 @@
   },
   "active": "ec8730e40853461c",
   "lastOpenFiles": [
-    "number/1288.md",
+    "number/485.md",
+    "number/2136.md",
+    "number/487.md",
     "number/366.md",
-    "Jump Game.md",
-    "Best Time to Buy and Sell Stock.md",
-    "number/835.md",
-    "number/523.md",
-    "number/2449.md",
-    "number/1662.md",
-    "number/1239.md",
-    "weekly contest/20221022 Contest 316.md"
+    "number/334.md",
+    "number/323.md",
+    "number/220.md",
+    "number/124.md",
+    "number/105.md",
+    "number/1288.md"
   ]
 }
