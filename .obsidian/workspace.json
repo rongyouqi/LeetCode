@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "weekly contest/20221029 Contest 317.md",
-                "mode": "preview",
+                "file": "number/766.md",
+                "mode": "source",
                 "source": true
               }
             }
@@ -89,7 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "weekly contest/20221029 Contest 317.md",
+                "file": "number/766.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,7 +106,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "weekly contest/20221029 Contest 317.md"
+                "file": "number/766.md"
               }
             }
           }
@@ -122,9 +122,9 @@
   },
   "active": "a61be6c79d25d6b9",
   "lastOpenFiles": [
+    "weekly contest/20221029 Contest 317.md",
     "number/2458.md",
     "number/2457.md",
-    "weekly contest/20221029 Contest 317.md",
     "number/2456.md",
     "number/2455.md",
     "weekly contest/20221022 Contest 316.md",
