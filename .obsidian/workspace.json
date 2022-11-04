@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "6691ad84df438b9f",
+        "id": "4f63a02a7743ab04",
         "type": "tabs",
         "children": [
           {
-            "id": "a61be6c79d25d6b9",
+            "id": "2e5def5001b5139e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "number/43.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "43f5fc1f4712b446",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "number/2458.md",
                 "mode": "source",
                 "source": true
               }
@@ -120,17 +108,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "a61be6c79d25d6b9",
+  "active": "2e5def5001b5139e",
   "lastOpenFiles": [
+    "Jump Game.md",
+    "number/2458.md",
+    "Blind 75.pdf",
+    "number/43.md",
     "number/32.md",
     "number/345.md",
     "number/2131.md",
     "number/127.md",
     "number/433.md",
-    "number/1198.md",
-    "number/1706.md",
-    "number/766.md",
-    "weekly contest/20221029 Contest 317.md",
-    "number/2458.md"
+    "number/1198.md"
   ]
 }
