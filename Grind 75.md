@@ -2316,6 +2316,345 @@ Space Complexity: O(n)
 
 # Medium (101)
 
+## 43. [Leetcode 57](https://leetcode.com/problems/insert-interval/) Insert Interval #Array
+
+- You are given an array of non-overlapping intervals `intervals` where `intervals[i] = [starti, endi]` represent the start and the end of the `ith` interval and `intervals` is sorted in ascending order by `starti`. You are also given an interval `newInterval = [start, end]` that represents the start and end of another interval.
+- Insert `newInterval` into `intervals` such that `intervals` is still sorted in ascending order by `starti` and `intervals` still does not have any overlapping intervals (merge overlapping intervals if necessary).
+- Return `intervals` _after the insertion_.
+- **Example 1:**
+    - **Input:** intervals = `[[1,3],[6,9]]`, newInterval = [2,5]
+    - **Output:** `[[1,5],[6,9]]`
+- **Example 2:**
+    - **Input:** intervals = `[[1,2],[3,5],[6,7],[8,10],[12,16]]`, newInterval = [4,8]
+    - **Output:** `[[1,2],[3,10],[12,16]]`
+    - **Explanation:** Because the new interval [4,8] overlaps with [3,5],[6,7],[8,10].
+- **Constraints:**
+    -   `0 <= intervals.length <= 10^4`
+    -   `intervals[i].length == 2`
+    -   `0 <= starti <= endi <= 10^5`
+    -   `intervals` is sorted by `starti` in **ascending** order.
+    -   `newInterval.length == 2`
+    -   `0 <= start <= end <= 10^5`
+
+### Solution
+
+```java
+public int[][] insert(int[][] intervals, int[] newInterval) {
+    List<int[]> result = new ArrayList<>();
+    int i = 0;
+    while (i < intervals.length && intervals[i][1] < newInterval[0]) {
+        result.add(intervals[i]);
+        i++;
+    }
+    while (i < intervals.length && intervals[i][0] <= newInterval[1]) {
+        newInterval[0] = Math.min(newInterval[0], intervals[i][0]);
+        newInterval[1] = Math.max(newInterval[1], intervals[i][1]);
+        i++;
+    }
+    result.add(newInterval);
+    while (i < intervals.length) {
+        result.add(intervals[i]);
+        i++;
+    }
+    return result.toArray(new int[result.size()][]);
+}
+```
+
+Time Complexity: O(n)
+
+Space Complexity: O(n)
+
+## 44. [LeetCode 542](https://leetcode.com/problems/01-matrix/) 01 Matrix #Graph
+
+- Given an `m x n` binary matrix `mat`, return _the distance of the nearest_ `0` _for each cell_.
+- The distance between two adjacent cells is `1`.
+- **Example 1:**
+    - <img src="https://assets.leetcode.com/uploads/2021/04/24/01-1-grid.jpg" style="zoom:67%;" />
+    - **Input:** mat = `[[0,0,0],[0,1,0],[0,0,0]]`
+    - **Output:** `[[0,0,0],[0,1,0],[0,0,0]]`
+- **Example 2:**
+    - <img src="https://assets.leetcode.com/uploads/2021/04/24/01-2-grid.jpg" style="zoom:67%;" />
+    - **Input:** mat = `[[0,0,0],[0,1,0],[1,1,1]]`
+    - **Output:** `[[0,0,0],[0,1,0],[1,2,1]]`
+- **Constraints:**
+    -   `m == mat.length`
+    -   `n == mat[i].length`
+    -   `1 <= m, n <= 10^4`
+    -   `1 <= m * n <= 10^4`
+    -   `mat[i][j]` is either `0` or `1`.
+    -   There is at least one `0` in `mat`.
+
+### Solution
+
+```java
+public int[][] updateMatrix(int[][] mat) {
+    if (mat == null || mat.length == 0 || mat[0].length == 0 || (mat.length == 1 && mat[0].length == 0)) {
+        return mat;
+    }
+    int[][] result = new int[mat.length][mat[0].length];
+    int max = mat.length + mat[0].length;
+    for (int i = 0; i < mat.length; i++) {
+        for (int j = 0; j < mat[0].length; j++) {
+            if (mat[i][j] == 0) {
+                continue;
+            }
+            result[i][j] = max;
+            if (i > 0) {
+                result[i][j] = Math.min(result[i][j], result[i - 1][j] + 1);
+            }
+            if (j > 0) {
+                result[i][j] = Math.min(result[i][j], result[i][j - 1] + 1);
+            }
+        }
+    }
+    for (int i = mat.length - 1; i >= 0; i--) {
+        for (int j = mat[0].length - 1; j >= 0; j--) {
+            if (mat[i][j] == 0) {
+                continue;
+            }
+            if (i < mat.length - 1) {
+                result[i][j] = Math.min(result[i][j], result[i + 1][j] + 1);
+            }
+            if (j < mat[0].length - 1) {
+                result[i][j] = Math.min(result[i][j], result[i][j + 1] + 1);
+            }
+        }
+    }
+    return result;
+}
+```
+
+Time Complexity: O(mn)
+
+Space Complexity: O(1)
+
+## 45. [LeetCode 973](https://leetcode.com/problems/k-closest-points-to-origin/) K Closest Points to Origin #Heap
+
+- Given an array of `points` where `points[i] = [xi, yi]` represents a point on the **X-Y** plane and an integer `k`, return the `k` closest points to the origin `(0, 0)`.
+- The distance between two points on the **X-Y** plane is the Euclidean distance (i.e., `√(x1 - x2)2 + (y1 - y2)2`).
+- You may return the answer in **any order**. The answer is **guaranteed** to be **unique** (except for the order that it is in).
+- **Example 1:**
+    - <img src="https://assets.leetcode.com/uploads/2021/03/03/closestplane1.jpg" style="zoom: 33%;" />
+    - **Input:** points = `[[1,3],[-2,2]]`, k = 1
+    - **Output:** `[[-2,2]]`
+    - **Explanation:**
+        - The distance between (1, 3) and the origin is sqrt(10).
+        - The distance between (-2, 2) and the origin is sqrt(8).
+        - Since sqrt(8) < sqrt(10), (-2, 2) is closer to the origin.
+        - We only want the closest k = 1 points from the origin, so the answer is just `[[-2,2]]`.
+- **Example 2:**
+    - **Input:** points = `[[3,3],[5,-1],[-2,4]]`, k = 2
+    - **Output:** `[[3,3],[-2,4]]`
+    - **Explanation:** The answer `[[-2,4],[3,3]]` would also be accepted.
+- **Constraints:**
+    -   `1 <= k <= points.length <= 10^4`
+    -   `-10^4 < xi, yi < 10^4`
+
+### Solution 1: max heap
+
+```java
+public int[][] kClosest(int[][] points, int k) {
+    PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> Integer.compare(b[0] * b[0] + b[1] * b[1], a[0] * a[0] + a[1] * a[1]));
+    for (int[] point : points) {
+        pq.offer(point);
+        if (pq.size() > k) {
+            pq.poll();
+        }
+    }
+    int[][] result = new int[k][2];
+    for (int i = 0; i < k; i++) {
+        int[] point = pq.poll();
+        result[i][0] = point[0];
+        result[i][1] = point[1];
+    }
+    return result;
+}
+```
+
+Time Complexity: O(nlogk)
+
+Space Complexity: O(k)
+
+### Solution 2: quickselect
+
+```java
+public int[][] kClosest(int[][] points, int k) {
+    quickselect(points, 0, points.length - 1, k);
+    return Arrays.copyOfRange(points, 0, k);
+}
+
+private void quickselect(int[][] points, int left, int right, int k) {
+    if (left >= right) {
+        return;
+    }
+    int pivot = left + new Random().nextInt(right - left);
+    pivot = partition(left, right, pivot, points);
+    if (pivot == k) {
+        return;
+    } else if (pivot < k) {
+        quickselect(points, pivot + 1, right, k);
+    } else {
+        quickselect(points, left, pivot - 1, k);
+    }
+}
+
+private int partition(int left, int right, int pivot, int[][] points) {
+    int distance = dist(points, pivot);
+    swap(points, pivot, right);
+    int index = left;
+    for (int i = left; i < right; i++) {
+        if (dist(points, i) < distance) {
+            swap(points, index, i);
+            index++;
+        }
+    }
+    swap(points, index, right);
+    return index;
+}
+
+private int dist(int[][] points, int index) {
+    int[] point = points[index];
+    return point[0] * point[0] + point[1] * point[1];
+}
+
+private void swap(int[][] points, int x, int y) {
+    int temp0 = points[x][0], temp1 = points[x][1];
+    points[x][0] = points[y][0];
+    points[x][1] = points[y][1];
+    points[y][0] = temp0;
+    points[y][1] = temp1;
+}
+```
+
+Time Complexity: O(n)
+
+Space Complexity: O(n)
+
+## 46. [LeetCode 3](https://leetcode.com/problems/longest-substring-without-repeating-characters/) Longest Substring Without Repeating Characters #String 
+
+- Given a string `s`, find the length of the **longest substring** without repeating characters.
+- **Example 1:**
+    - **Input:** s = "abcabcbb"
+    - **Output:** 3
+    - **Explanation:** The answer is "abc", with the length of 3.
+- **Example 2:**
+    - **Input:** s = "bbbbb"
+    - **Output:** 1
+    - **Explanation:** The answer is "b", with the length of 1.
+- **Example 3:**
+    - **Input:** s = "pwwkew"
+    - **Output:** 3
+    - **Explanation:** The answer is "wke", with the length of 3.
+        - Notice that the answer must be a substring, "pwke" is a subsequence and not a substring.
+- **Constraints:**
+    -   `0 <= s.length <= 5 * 10^4`
+    -   `s` consists of English letters, digits, symbols and spaces.
+
+### Solution: sliding window
+
+```java
+public int lengthOfLongestSubstring(String s) {
+    if (s == null || s.length() == 0) {
+        return 0;
+    }
+    int result = 0;
+    int[] cache = new int[256];
+    for (int slow = 0, fast = 0; fast < s.length(); fast++) {
+        slow = cache[s.charAt(fast)] > 0 ? Math.max(slow, cache[s.charAt(fast)]) : slow;
+        cache[s.charAt(fast)] = fast + 1;
+        result = Math.max(result, fast - slow + 1);
+    }
+    return result;
+}
+```
+
+Time Complexity: O(n)
+
+Space Complexity: O(1)
+
+## 47. [LeetCode 15](https://leetcode.com/problems/3sum/) 3 Sum #Array
+
+- Given an integer array nums, return all the triplets `[nums[i], nums[j], nums[k]]` such that `i != j`, `i != k`, and `j != k`, and `nums[i] + nums[j] + nums[k] == 0`.
+- Notice that the solution set must not contain duplicate triplets.
+- **Example 1:**
+    - **Input:** nums = [-1,0,1,2,-1,-4]
+    - **Output:** `[[-1,-1,2],[-1,0,1]]`
+    - **Explanation:** 
+        - nums[0] + nums[1] + nums[2] = (-1) + 0 + 1 = 0.
+        - nums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0.
+        - nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0.
+        - The distinct triplets are [-1,0,1] and [-1,-1,2].
+        - Notice that the order of the output and the order of the triplets does not matter.
+- **Example 2:**
+    - **Input:** nums = [0,1,1]
+    - **Output:** []
+    - **Explanation:** The only possible triplet does not sum up to 0.
+- **Example 3:**
+    - **Input:** nums = [0,0,0]
+    - **Output:** `[[0,0,0]]`
+    - **Explanation:** The only possible triplet sums up to 0.
+- **Constraints:**
+    -   `3 <= nums.length <= 3000`
+    -   `-10^5 <= nums[i] <= 10^5`
+
+### Solution
+
+```java
+public List<List<Integer>> threeSum(int[] nums) {
+    List<List<Integer>> result = new ArrayList<>();
+    if (nums == null || nums.length < 3) {
+        return result;
+    }
+    return allTriples(nums, 0);
+}
+
+private List<List<Integer>> allTriples(int[] array, int target) {
+    List<List<Integer>> result = new ArrayList<>();
+    Arrays.sort(array);
+    for (int i = 0; i < array.length - 2; i++) {
+        if (i > 0 && array[i] == array[i - 1]) {
+            continue;
+        }
+        int left = i + 1;
+        int right = array.length - 1;
+        while (left < right) {
+            int temp = array[left] + array[right];
+            if (temp + array[i] == target) {
+                result.add(Arrays.asList(array[i], array[left], array[right]));
+                left++;
+                while (left < right && array[left] == array[left - 1]) {
+                    left++;
+                }
+            } else if (temp + array[i] < target) {
+                left++;
+            } else {
+                right--;
+            }
+        }
+    }
+    return result;
+}
+```
+
+Time Complexity: O(n^2)
+
+Space Complexity: O(logn)
+
+## 48. [LeetCode ]
+
+
+
+### Solution
+
+```java
+```
+
+Time Complexity: O()
+
+Space Complexity: O()
+
+
+
 
 
 # Hard (26)
