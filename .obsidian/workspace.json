@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "number/278.md",
+                "file": "number/235.md",
                 "mode": "source",
                 "source": true
               }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "number/278.md",
+                "file": "number/235.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "number/278.md"
+                "file": "number/235.md"
               }
             }
           }
@@ -107,15 +107,15 @@
   },
   "active": "2e5def5001b5139e",
   "lastOpenFiles": [
+    "number/98.md",
+    "number/246.md",
+    "number/279.md",
+    "number/1965*.md",
+    "number/278.md",
     "number/704.md",
     "number/1926.md",
     "number/589.md",
     "number/409.md",
-    "number/121.md",
-    "number/772.md",
-    "number/227.md",
-    "number/224.md",
-    "number/587*.md",
-    "number/1965.md"
+    "number/121.md"
   ]
 }
